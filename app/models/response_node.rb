@@ -1,6 +1,7 @@
 class ResponseNode
   # To change this template use File | Settings | File Templates.
-
+  require 'rubygems'
+  require 'json'
   attr_accessor :id, :attributes
   include Episode
 
@@ -15,7 +16,13 @@ class ResponseNode
   end
 
   def self.json_create(a, bearer_token= nil)
-    new(a,bearer_token) if a
+
+    if (a.class == String)
+      new(JSON.parse(a),bearer_token) if a
+    else
+      new(a,bearer_token) if a
+    end
+
   end
 
   def key

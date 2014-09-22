@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 gem 'site_config', '>= 0.0.1'
 gem 'httparty'
+gem 'json'
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -4,16 +4,13 @@ class HomeController < ApplicationController
 
     @message = "Welcome to Watchable Ads Asset page"
 
-    @channel = Finder.find($MidTierToken,SiteConfig.CHANNEL_ID,nil,nil,'channels')[0]
-
-    @channel_videos = Finder.find($MidTierToken,SiteConfig.CHANNEL_ID,nil,nil,'channels','allvideos',nil,nil,1,1000)[0]
+    @channel_videos = Finder.find($MidTierToken, nil, nil, nil, "channels", nil, nil, nil, nil, nil, nil, "/api/web/admin/search/channels/"+SiteConfig.CHANNEL_ID+"/videos")[0]
 
     @data = []
 
-    # @channel_videos.cleaned_videos.each do |video|
     @channel_videos.items.each do |video|
 
-      # videoDetail = Finder.find($MidTierToken, nil, nil, nil, "videos", nil, nil, nil, nil, nil, nil, "/api/web/videos/"+video['id'])[0]
+      # videoDetail = Finder.find($MidTierToken, nil, nil, nil, "videos", nil, nil, nil, nil, nil, nil, "/api/web/admin/search/videos/"+video['id'])[0]
       # title = videoDetail.title
       # created_time = videoDetail.live_broad_cast_time
       title = video['title']

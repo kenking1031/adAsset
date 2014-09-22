@@ -112,6 +112,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   httparty
   jquery-rails
+  json
   rails (= 3.2.19)
   sass-rails (~> 3.2.3)
   site_config (>= 0.0.1)
