@@ -1,0 +1,4 @@
+AdAssets
+========
+
+AdAssets interface
