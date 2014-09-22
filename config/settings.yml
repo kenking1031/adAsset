@@ -1,0 +1,110 @@
+defaults:
+
+  ROOT_CATEGORY: 100
+  CHANNEL_ID: "10181"
+  IMAGES_URL: "http://demo3-image-lb-1840931351.us-east-1.elb.amazonaws.com"
+  REDIS_URL: "redis://localhost:6379/6"
+  API_URL: "http://goldengate:SomeSuperSecretLetters@demo3-api-lb-1761503566.us-east-1.elb.amazonaws.com/api"
+  BASE_URL: "http://localhost:3000"
+# XTIER_URL: "http://ec2-54-237-27-55.compute-1.amazonaws.com:9000/api"
+#  XTIER_URL: "http://demo3-fabric-lb-1756645713.us-east-1.elb.amazonaws.com/api"   #demo3-original url /loader balancer
+  XTIER_URL: "http://fabricdemo.xidio.com/api"   #demo3
+#  XTIER_URL: "http://ec2-54-198-245-177.compute-1.amazonaws.com:9000/api"    #dev instance
+  AMAZON_SERVICES_URL: "http://demo3-event-lb-629145520.us-east-1.elb.amazonaws.com"
+
+  # When there is sign in secreat that URI transform the secret must be set separatly. Else the secret section in the url can be used
+  API_SECRET: "RCea5y23gBdsOhZE5CiMRK8rjR5ohRn1MsmH+3Gj3lwlyKN4ynrj3RMIDjnF9iCnii0QrVBgyazdLELcW1VdClA8WVseItqe"
+  #API_SECRET: "9a5901f0-63f9-4938-87cc-7a9b733788c1_3a5a0a7f-3e23-4fb2-9e16-4df426cf2190"
+
+  # save js errors in the newrelic
+  # allowed values: true|false
+  LOG_EXTERNAL_ERRORS: true
+
+  # from https://trello.com/c/3DGd1cOk
+  # Site protection, summarized in list In Progress
+  # There are two modes to the site protection:
+  # Final: Will be used after load testing
+  # Non authenticated users are redirected to login page
+  # Registration is behind basic auth
+  # Right now we need to get a version out with the Original mode.
+  #
+  # values:
+  # 'original' - Will be used while load testing, and removed after that.
+  # All of www.projecthelen.net is behind basic auth with vimond/gg as credentials.
+  # After entering the basic auth, the front page loads normally (no re-direct to login for un-authenticated users
+  # 'final' - Will be used after load testing
+  # Non authenticated users are redirected to login page
+  # Registration is behind basic auth
+  # Right now we need to get a version out with the Original mode.
+  SITE_PROTECTION: 'final'
+
+  # time in minutes how log a page will be in cache
+  # list of cached controllers/actions: https://basecamp.com/1796341/projects/611323-golden-gate/documents/1248137-goldengate-caching
+  PAGE_CACHE_TIME: 15
+  # All cache times is given in minutes
+  MEGA_MENU_CACHE_TIME: 15
+  LANDING_PAGE_CACHE_TIME: 15
+
+  APP_TITLE: "ChannelStore"
+
+  # display footer or not
+  # allowed values: true|false
+  DISPLAY_FOOTER: false
+
+  BASIC_AUTH: false # defaults to true, change to false to disable basic_auth
+  BASIC_AUTH_USER: 'xidiotrial'
+  BASIC_AUTH_PASSWORD: 'Fhaze1'
+
+
+
+  # Used for device activation
+  ACTIVATION_QUALIFIER: 'geniatech'
+
+  # Messages will be saved in syslog when the value is true
+  # possible values: true|false
+  USE_SYSLOG_AS_RAILS_LOGGER: false
+
+  # Be sure to restart your server when you modify this file.
+
+  # from config/initializers/secret_token.rb:
+  #
+  # Your secret key for verifying the integrity of signed cookies.
+  # If you change this key, all old signed cookies will become invalid!
+  # Make sure the secret is at least 30 characters and all random,
+  # no regular words or you'll be exposed to dictionary attacks.
+  SESSION_SECRET: "c2adba6f3b078dcfb6d328fc990054b852808967d761ce705e345e36c3446a1aec030224227a591e2afd266e43ea3172e3f4a57a9dc57d7544fb4e46713210b6"
+
+
+test:
+  TEST_USER: "demo@mailinator.com"
+  TEST_USER_PASSWORD: "fasd2463"
+  TEST_ASSET_ID: 2177602
+  # category_id for asset TEST_ASSET_ID
+  TEST_ASSET_CATEGORY_ID: 20111249
+  TEST_CATEGORY_1: 103
+  TEST_CATEGORY_WITH_BANNERS: 215
+  TEST_CHANNEL_1: 127
+  FREE_CHANNEL_ID: 20111249
+  TEST_CHANNEL_ID_WITHOUT_LIKES: 2177536
+  TEST_CHANNEL_ID_WITH_LIKES: 20111107
+  TEST_CHANNEL_ID_WITH_EDITOR_PICK: 284
+  TEST_CATEGORY_CONTAINED_CHANNEL_WITH_EDITOR_PICK: 196
+  TEST_CHANNEL_ID_TRENDING: 163
+  PUBLISHER_NAME: "Vimond"
+  CATEGORY_NAME: "Fashion & Style"
+  SEARCH_WORD: "Gladiators"
+  NOT_EXISTING_ASSET_ID: 444444
+  ASSET_ID_OF_NOT_SUBSCRIBED_CHANNEL: 2177314
+  ASSET_ID_OF_SUBSCRIBED_CHANNEL: 2177544
+  FAVORITED_ASSET_ID_OF_SUBSCRIBED_CHANNEL: 2177539
+
+  API_URL: "http://goldengate:SomeSuperSecretLetters@demo3-api-lb-1761503566.us-east-1.elb.amazonaws.com/api"
+  API_SECRET: "RCea5y23gBdsOhZE5CiMRK8rjR5ohRn1MsmH+3Gj3lwlyKN4ynrj3RMIDjnF9iCnii0QrVBgyazdLELcW1VdClA8WVseItqe"
+
+staging:
+  API_URL: "http://goldengate:SomeSuperSecretLetters@demo3-api-lb-1761503566.us-east-1.elb.amazonaws.com/api"
+  API_SECRET: "RCea5y23gBdsOhZE5CiMRK8rjR5ohRn1MsmH+3Gj3lwlyKN4ynrj3RMIDjnF9iCnii0QrVBgyazdLELcW1VdClA8WVseItqe"
+
+production:
+  API_URL: "http://goldengate:SomeSuperSecretLetters@demo3-api-lb-1761503566.us-east-1.elb.amazonaws.com/api"
+  API_SECRET: "RCea5y23gBdsOhZE5CiMRK8rjR5ohRn1MsmH+3Gj3lwlyKN4ynrj3RMIDjnF9iCnii0QrVBgyazdLELcW1VdClA8WVseItqe"

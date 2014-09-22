@@ -1,0 +1,11 @@
+<div id="header"><%= @message %></div>
+
+<% for video in @data %>
+
+    <div id="video-data">
+        <div id="video-title"><%= video["title"] %></div>
+        <div id="video-timestamp"><%= video["created_time"] %></div>
+        <div id="video-url"><%= word_wrap(video["play_url"]) %></div>
+    </div>
+
+<% end %>
