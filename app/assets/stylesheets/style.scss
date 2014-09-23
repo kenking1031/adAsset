@@ -7,6 +7,19 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+button{
+  width:100px;
+  height:30px;
+  background-color: #eaeaea;
+  color: #green;
+}
+.urlFt{
+  width:600px;
+  height:40px;
+  overflow: scroll;
+  padding:2px 5px;
+}
 #logo,
 #logo2 {
   position: fixed;
@@ -74,11 +87,13 @@ body.scrolling #logo2 {
         width: 100px;
         margin-right: 20px;
         float: left;
+       border: 2px solid red;
       }
       #video-timestamp {
         width: 100px;
         margin-right: 20px;
         float: left;
+        border: 2px solid red;
       }
       #video-url {
         font-size: 12px;
@@ -87,4 +102,53 @@ body.scrolling #logo2 {
       }
     }
   }
+}
+
+table{
+  border: 1px solid #fff;
+  padding:5px;
+  thead{
+    background-color:#330000;
+  }
+  th{
+    padding:3px;
+  }
+  td{
+    padding:2px;
+    border: 1px solid #3D3D3D;
+  }
+}
+
+#keywords {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  padding:5px;
+}
+
+
+#keywords thead {
+  cursor: pointer;
+  background: #330000;
+}
+#keywords thead tr th {
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#keywords thead tr th span {
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#keywords thead tr th.headerSortUp span {
+  background-image: url('/assets/up-arrow.png');
+}
+#keywords thead tr th.headerSortDown span {
+  background-image: url('/assets/down-arrow.png');
 }
