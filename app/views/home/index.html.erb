@@ -1,22 +1,29 @@
 <div id="header"><%= @message %></div>
-<table id="assetList" class="display" cellspacing="0" width="100%">
+<table id="keywords" class="tablesorter" cellspacing="0" width="100%">
   <thead>
   <tr>
-    <th>Title</th>
-    <th>Time</th>
-    <th>Url</th>
+    <th><span>Title</span></th>
+    <th><span>Time</span></th>
+    <th><span>Url</span></th>
+    <th> </th>
   </tr>
   </thead>
   <tbody>
 
     <% for video in @data %>
       <tr>
-        <td data-search="<%= video["title"] %>" id="video-title"><%= video["title"] %></td>
-        <td id = "video-timestamp" data-order="<%=time_to_number(video["created_time"]) %>"><%= video["created_time"] %></td>
-        <td id ="video-url"><%= word_wrap(video["play_url"]) %></td>
+        <td ><%= video["title"] %></td>
+        <td ><%= video["created_time"] %></td>
+        <td ><div class="urlFt"><%= word_wrap(video["play_url"]) %></div></td>
+        <td ><button>Copy URL</button></td>
       </tr>
     <% end %>
 
   </tbody>
  </table>
 
+<script type="text/javascript">
+    $(function(){
+        $('#keywords').tablesorter();
+    });
+</script>
