@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require tablesorter/jquery.tablesorter.js
 //= require_tree .
+
+$("#assetList").tablesorter( {sortList: [[0,0], [1,0]]} );

@@ -1,11 +1,22 @@
 <div id="header"><%= @message %></div>
+<table id="assetList" class="display" cellspacing="0" width="100%">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Time</th>
+    <th>Url</th>
+  </tr>
+  </thead>
+  <tbody>
 
-<% for video in @data %>
+    <% for video in @data %>
+      <tr>
+        <td data-search="<%= video["title"] %>" id="video-title"><%= video["title"] %></td>
+        <td id = "video-timestamp" data-order="<%=time_to_number(video["created_time"]) %>"><%= video["created_time"] %></td>
+        <td id ="video-url"><%= word_wrap(video["play_url"]) %></td>
+      </tr>
+    <% end %>
 
-    <div id="video-data">
-        <div id="video-title"><%= video["title"] %></div>
-        <div id="video-timestamp"><%= video["created_time"] %></div>
-        <div id="video-url"><%= word_wrap(video["play_url"]) %></div>
-    </div>
+  </tbody>
+ </table>
 
-<% end %>
