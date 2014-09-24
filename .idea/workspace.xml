@@ -84,7 +84,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="0" selection-start="2181" selection-end="2181" vertical-scroll-proportion="1.6018518">
+            <state line="10" column="101" selection-start="483" selection-end="483" vertical-scroll-proportion="0.23622048">
               <folding />
             </state>
           </provider>
@@ -132,7 +132,7 @@
       <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="88" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+            <state line="40" column="88" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,7 +141,7 @@
       <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="26" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0">
+            <state line="31" column="26" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -709,9 +709,6 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0f41a48a-0752-4093-b40b-2edfd90296a3" name="Default" comment="" />
@@ -729,7 +726,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32226834" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20373027" sideWeight="0.9529737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3472023" sideWeight="0.9529737" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -743,14 +740,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -880,7 +869,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0">
+        <state line="31" column="26" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -920,14 +909,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="88" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+        <state line="40" column="88" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2181" selection-end="2181" vertical-scroll-proportion="1.6018518">
+        <state line="10" column="101" selection-start="483" selection-end="483" vertical-scroll-proportion="0.23622048">
           <folding />
         </state>
       </provider>
