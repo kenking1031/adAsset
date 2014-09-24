@@ -37,7 +37,7 @@
         <td ><%= video["title"] %></td>
         <td ><%=DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
         <td ><div class="urlFt"><textarea id="<%=textId %>" ><%= word_wrap(video["play_url"]) %></textarea></div></td>
-        <td ><button id="<%=buttonId %>" data-clipboard-target="<%= textId %>">Copy URL</button></td><td><div id="<%=testerId %>" style="display:none;">text copid</div></td>
+        <td ><button id="<%=buttonId %>" data-clipboard-target="<%= textId %>">Copy URL</button></td></td>
 
       </tr>
 
