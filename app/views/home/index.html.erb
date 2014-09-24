@@ -1,26 +1,28 @@
 <div id="header"><%= @message %></div>
 <table id="keywords" class="tablesorter" cellspacing="0" width="100%">
   <thead>
-  <tr>
-    <th><span>Title</span></th>
-    <th><span>Time</span></th>
-    <th><span>Url</span></th>
-    <th> </th>
-  </tr>
+    <tr>
+      <th><span>Thumbnail</span></th>
+      <th><span>Title</span></th>
+      <th><span>Time</span></th>
+      <th><span>Url</span></th>
+      <th></th>
+    </tr>
   </thead>
   <tbody>
 
     <% for video in @data %>
       <tr>
-        <td ><%= video["title"] %></td>
-        <td ><%= video["created_time"] %></td>
-        <td ><div class="urlFt"><%= word_wrap(video["play_url"]) %></div></td>
-        <td ><button>Copy URL</button></td>
+        <td><img src="<%= video["thumbnail"] %>"></td>
+        <td><%= video["title"] %></td>
+        <td><%= video["created_time"] %></td>
+        <td><div class="urlFt"><%= word_wrap(video["play_url"]) %></div></td>
+        <td><button>Copy URL</button></td>
       </tr>
     <% end %>
 
   </tbody>
- </table>
+</table>
 
 <script type="text/javascript">
     $(function(){
