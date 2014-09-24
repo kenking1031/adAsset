@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require /jquery
+//= require ZeroClipboard.js
+//= require main.js
 //= require_tree .
 
 

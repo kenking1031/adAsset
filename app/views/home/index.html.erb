@@ -1,3 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='/assets/style.scss' rel='stylesheet' type='text/css'>
+  <title></title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.js"></script>
+  <script src="/assets/jquery.tablesorter.js"></script>
+  <script>
+      $(document).ready(function()
+      {
+
+          var clientTarget = new ZeroClipboard( $("#target-to-copy"), {
+              moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
+              debug: false
+          } );
+
+          clientTarget.on( "load", function(clientTarget)
+          {
+              $('#flash-loaded').fadeIn();
+
+              clientTarget.on( "complete", function(clientTarget, args) {
+                  clientTarget.setText( args.text );
+                  $('#target-to-copy-text').fadeIn();
+              } );
+          } );
+
+      });
+  </script>
+
+</head>
+
+
 <div id="header"><%= @message %></div>
 <table id="keywords" class="tablesorter" cellspacing="0" width="100%">
   <thead>
@@ -10,20 +43,38 @@
   </thead>
   <tbody>
 
-    <% for video in @data %>
+  <% for video in @data %>
       <tr>
         <td ><%= video["title"] %></td>
         <td ><%= video["created_time"] %></td>
         <td ><div class="urlFt"><%= word_wrap(video["play_url"]) %></div></td>
         <td ><button>Copy URL</button></td>
       </tr>
-    <% end %>
+  <% end %>
 
   </tbody>
- </table>
+</table>
+
+
 
 <script type="text/javascript">
     $(function(){
         $('#keywords').tablesorter();
     });
+
 </script>
+
+<body>
+
+
+<section class="container">
+  <p id="flash-loaded" style="display:none">Flash player is loaded.</p>
+  <h2>Set Copy Target</h2>
+  <p>
+    <button id="target-to-copy" data-clipboard-target="clipboard-text">Click To Copy</button><br/>
+    <textarea name="clipboard-text" id="clipboard-text" cols="30" rows="1">test test test test</textarea>
+  </p>
+  <p id="target-to-copy-text" style="display:none;">Text Copied.</p>
+  <h2>Paste Test</h2>
+  <textarea name="paste-test" id="paste-test" cols="80" rows="1" placeholder="Paste Text Here"></textarea>
+</section>

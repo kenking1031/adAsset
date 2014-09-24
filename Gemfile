@@ -10,6 +10,9 @@ gem 'site_config', '>= 0.0.1'
 gem 'httparty'
 gem 'json'
 
+gem 'jquery-rails'
+#gem 'zeroclipboard-rails', '~> 0.1.0'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -22,8 +25,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'zeroclipboard-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
