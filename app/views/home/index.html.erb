@@ -6,27 +6,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   <script src="http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.js"></script>
   <script src="/assets/jquery.tablesorter.js"></script>
-  <script>
-      $(document).ready(function()
-      {
 
-          var clientTarget = new ZeroClipboard( $("#target-to-copy"), {
-              moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
-              debug: false
-          } );
-
-          clientTarget.on( "load", function(clientTarget)
-          {
-              $('#flash-loaded').fadeIn();
-
-              clientTarget.on( "complete", function(clientTarget, args) {
-                  clientTarget.setText( args.text );
-                  $('#target-to-copy-text').fadeIn();
-              } );
-          } );
-
-      });
-  </script>
 
 </head>
 
@@ -42,14 +22,42 @@
   </tr>
   </thead>
   <tbody>
-
+  <% rowIndex = 0 %>
   <% for video in @data %>
+  <% buttonId = "target-to-copy#{rowIndex}" %>
+  <% textId = "target-to-copy-text#{rowIndex}" %>
       <tr>
         <td ><%= video["title"] %></td>
         <td ><%= video["created_time"] %></td>
-        <td ><div class="urlFt"><%= word_wrap(video["play_url"]) %></div></td>
-        <td ><button>Copy URL</button></td>
+        <td ><div class="urlFt"><textarea id="<%=textId %>" ><%= word_wrap(video["play_url"]) %></textarea></div></td>
+        <td ><button id="<%=buttonId %>" data-clipboard-target="<%= textId %>">Copy URL</button></td>
       </tr>
+
+
+      <script>
+          $(document).ready(function()
+          {
+              var buttonId = $("#<%= buttonId %>");
+              var textId = $("#<%= textId %>");
+              var clientTarget = new ZeroClipboard(buttonId, {
+                  moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
+                  debug: false
+              } );
+
+              clientTarget.on( "load", function(clientTarget)
+              {
+                  $('#flash-loaded').fadeIn();
+
+                  clientTarget.on( "complete", function(clientTarget, args) {
+                      clientTarget.setText( args.text );
+                      textId.fadeIn();
+                  } );
+              } );
+
+          });
+      </script>
+
+      <% rowIndex+=1 %>
   <% end %>
 
   </tbody>
@@ -65,16 +73,3 @@
 </script>
 
 <body>
-
-
-<section class="container">
-  <p id="flash-loaded" style="display:none">Flash player is loaded.</p>
-  <h2>Set Copy Target</h2>
-  <p>
-    <button id="target-to-copy" data-clipboard-target="clipboard-text">Click To Copy</button><br/>
-    <textarea name="clipboard-text" id="clipboard-text" cols="30" rows="1">test test test test</textarea>
-  </p>
-  <p id="target-to-copy-text" style="display:none;">Text Copied.</p>
-  <h2>Paste Test</h2>
-  <textarea name="paste-test" id="paste-test" cols="80" rows="1" placeholder="Paste Text Here"></textarea>
-</section>

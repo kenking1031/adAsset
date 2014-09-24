@@ -17,8 +17,13 @@ button{
 .urlFt{
   width:600px;
   height:40px;
-  overflow: scroll;
+  //overflow: scroll;
   padding:2px 5px;
+  textarea{
+    width:595px;
+    border:1px solid #232121;
+    height:30px;
+  }
 }
 
 #content-wrapper {
