@@ -15,14 +15,14 @@ button{
   color: green;
 }
 .urlFt{
-  width:600px;
-  height:40px;
+  width:500px;
+  height:45px;
   //overflow: scroll;
   padding:2px 5px;
   textarea{
-    width:595px;
+    width:495px;
     border:1px solid #232121;
-    height:30px;
+    height:40px;
   }
 }
 
@@ -116,4 +116,12 @@ table{
 }
 #keywords thead tr th.headerSortDown span {
   background-image: url('/assets/down-arrow.png');
+}
+#subheader{
+  text-align: center;
+  width:600px;
+  margin: 0 auto;
+  padding-bottom:10px;
+  font:14px;
+  color:#fff;
 }

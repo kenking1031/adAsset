@@ -12,6 +12,7 @@
 
 
 <div id="header"><%= @message %></div>
+<div id ="subheader">Click on any column title to sort</div>
 <table id="keywords" class="tablesorter" cellspacing="0" width="100%">
   <thead>
     <tr>
@@ -25,24 +26,27 @@
   <tbody>
   <% rowIndex = 0 %>
   <% for video in @data %>
+
   <% buttonId = "target-to-copy#{rowIndex}" %>
   <% textId = "target-to-copy-text#{rowIndex}" %>
+  <% testerId= "test#{rowIndex}" %>
+
       <tr>
 
         <td><img src="<%= video["thumbnail"] %>"></td>
         <td ><%= video["title"] %></td>
         <td ><%=DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
         <td ><div class="urlFt"><textarea id="<%=textId %>" ><%= word_wrap(video["play_url"]) %></textarea></div></td>
-        <td ><button id="<%=buttonId %>" data-clipboard-target="<%= textId %>">Copy URL</button></td>
+        <td ><button id="<%=buttonId %>" data-clipboard-target="<%= textId %>">Copy URL</button></td><td><div id="<%=testerId %>" style="display:none;">text copid</div></td>
 
       </tr>
-
 
       <script>
           $(document).ready(function()
           {
               var buttonId = $("#<%= buttonId %>");
               var textId = $("#<%= textId %>");
+              var testerId = $("#<%=testerId %>");
               var clientTarget = new ZeroClipboard(buttonId, {
                   moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
                   debug: false
@@ -54,18 +58,18 @@
 
                   clientTarget.on( "complete", function(clientTarget, args) {
                       clientTarget.setText( args.text );
-                      textId.fadeIn();
+                      testerId.fadeIn();
                   } );
               } );
 
           });
       </script>
-
       <% rowIndex+=1 %>
   <% end %>
 
   </tbody>
 </table>
+
 <script type="text/javascript">
     $(function(){
         $('#keywords').tablesorter();

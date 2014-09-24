@@ -4,8 +4,8 @@
     <list default="true" id="0f41a48a-0752-4093-b40b-2edfd90296a3" name="Default" comment="" />
     <ignored path="AdAssets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411582535633" ignored="false" />
-    <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411574669948" ignored="false" />
+    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411598619030" ignored="false" />
+    <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411598821557" ignored="false" />
     <file path="/application_helper.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411432747209" ignored="false" />
     <file path="/application.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411433930453" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-triggers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
@@ -30,7 +30,7 @@
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-option-sort-key.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-parsers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-option-sort-force.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/emailer.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411439027775" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/emailer.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
     <file path="/application.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411499595898" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-triggers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-meta-parsers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
@@ -54,11 +54,26 @@
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-option-sort-key.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-parsers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-option-sort-force.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
-    <file path="/*.regexp" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411505803815" ignored="false" />
+    <file path="/*.regexp" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411589712543" ignored="false" />
     <file path="/Gemfile" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411518736837" ignored="false" />
     <file path="/home_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411526107071" ignored="false" />
-    <file path="/Dummy.txt" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411569208338" ignored="false" />
+    <file path="/Dummy.txt" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411589527519" ignored="false" />
     <file path="/test.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411573158527" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/asset.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590727847" ignored="false" />
+    <file path="/asset.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590726917" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/playback_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/application_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="/application_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590410446" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/footer_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/genres_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/publishers_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/config/settings.yml" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/subscriptions_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/javascripts/player.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/user.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/templates/videos-show.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/featured_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/finder.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +96,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="76" selection-start="751" selection-end="751" vertical-scroll-proportion="0.46296296">
-              <folding />
+            <state line="14" column="54" selection-start="579" selection-end="579" vertical-scroll-proportion="-8.75">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,7 +110,7 @@
       <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="95" selection-start="176" selection-end="263" vertical-scroll-proportion="-3.75">
+            <state line="42" column="53" selection-start="1470" selection-end="1491" vertical-scroll-proportion="-20.125">
               <folding>
                 <element signature="n#style#0;n#p#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -120,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="88" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
+            <state line="123" column="22" selection-start="2074" selection-end="2074" vertical-scroll-proportion="0.8292079">
               <folding />
             </state>
           </provider>
@@ -132,7 +149,7 @@
       <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="26" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+            <state line="4" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,14 +202,14 @@
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/main.js" />
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/script.js" />
         <option value="$PROJECT_DIR$/public/test.html" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
         <option value="$PROJECT_DIR$/config/settings.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
       </list>
     </option>
   </component>
@@ -424,7 +441,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/zeroclipboard.org" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GoldenGate" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
@@ -700,6 +717,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0f41a48a-0752-4093-b40b-2edfd90296a3" name="Default" comment="" />
@@ -710,15 +744,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="820" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32226834" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27403155" sideWeight="0.9529737" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12482066" sideWeight="0.5975104" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40248963" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -844,13 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="26" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="34" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0">
@@ -861,13 +888,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="7" selection-start="107" selection-end="107" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="88" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -890,7 +910,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="95" selection-start="176" selection-end="263" vertical-scroll-proportion="-3.75">
+        <state line="42" column="53" selection-start="1470" selection-end="1491" vertical-scroll-proportion="-20.125">
           <folding>
             <element signature="n#style#0;n#p#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -898,9 +918,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="76" selection-start="751" selection-end="751" vertical-scroll-proportion="0.46296296">
+        <state line="14" column="54" selection-start="579" selection-end="579" vertical-scroll-proportion="-8.75">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="22" selection-start="2074" selection-end="2074" vertical-scroll-proportion="0.8292079">
           <folding />
         </state>
       </provider>
