@@ -1,7 +1,7 @@
 defaults:
 
   ROOT_CATEGORY: 100
-  CHANNEL_ID: "10196"
+  CHANNEL_ID: "10781"
   IMAGES_URL: "http://demo3-image-lb-1840931351.us-east-1.elb.amazonaws.com"
   REDIS_URL: "redis://localhost:6379/6"
   API_URL: "http://goldengate:SomeSuperSecretLetters@demo3-api-lb-1761503566.us-east-1.elb.amazonaws.com/api"
