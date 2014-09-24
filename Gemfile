@@ -6,7 +6,6 @@ gem 'rails', '3.2.19'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
 gem 'site_config', '>= 0.0.1'
 gem 'httparty'
 gem 'json'
@@ -24,6 +23,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'zeroclipboard-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
