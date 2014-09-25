@@ -28,34 +28,6 @@
 
       </tr>
 
-      <script>
-
-
-          $(document).ready(function()
-          {
-//              $('#keywords').spin();
-              var buttonId = $("#<%= buttonId %>");
-              var textId = $("#<%= textId %>");
-              var clientTarget = new ZeroClipboard(buttonId, {
-                  moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
-                  debug: false
-              } );
-
-              clientTarget.on( "load", function(clientTarget)
-              {
-                  $('#flash-loaded').fadeIn();
-
-                  clientTarget.on( "complete", function(clientTarget, args) {
-                      clientTarget.setText( args.text );
-                      $(this).css('backgroundColor','#ccc');
-                      $(this).parent().find('.msg_box').fadeIn();
-                      _self = $(this);
-                      setTimeout(function(){_self.parent().find('.msg_box').fadeOut();},1500);
-                  } );
-              } );
-
-          });
-      </script>
       <% rowIndex+=1 %>
   <% end %>
 
@@ -63,21 +35,48 @@
 </table>
 
 <script type="text/javascript">
+
+
+    $(document).ready(function()
+
+    {
+
+        var clientTarget = new ZeroClipboard($('.buttonFt'),{
+            moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
+            debug: false
+        } );
+
+        clientTarget.on( "load", function(clientTarget)
+        {
+            $('#flash-loaded').fadeIn();
+
+            clientTarget.on( "dataRequested", function(clientTarget, args) {
+                clientTarget.setText( args.text );
+                $(this).css('backgroundColor','#ccc');
+                $(this).parent().find('.msg_box').fadeIn();
+                _self = $(this);
+                setTimeout(function(){_self.parent().find('.msg_box').fadeOut();},1500);
+            } );
+        } );
+
+    });
+
+
     $(function(){
         $('#keywords').tablesorter( {
                 headers: {
-            // assign the secound column (we start counting zero)
+
             0: {
-                // disable it by setting the property sorter to false
+
                 sorter: false
             },
-            // assign the third column (we start counting zero)
+
             3: {
-                // disable it by setting the property sorter to false
+
                 sorter: false
             },
             4: {
-                // disable it by setting the property sorter to false
+
                 sorter: false
             }
         }

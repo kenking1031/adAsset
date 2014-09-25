@@ -11,9 +11,10 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.spin
 //= require jquery_ujs
 //= require ZeroClipboard.js
-//= require jquery.spin
+
 //= require_tree .
 
 

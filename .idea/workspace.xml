@@ -5,8 +5,12 @@
     <ignored path="AdAssets.iws" />
     <ignored path=".idea/workspace.xml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411623955212" ignored="false" />
+=======
+    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411671672841" ignored="false" />
+>>>>>>> remotefile/master
     <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411623441048" ignored="false" />
     <file path="/application_helper.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411432747209" ignored="false" />
     <file path="/application.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411433930453" ignored="false" />
@@ -77,6 +81,10 @@
     <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/featured_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
     <file path="$PROJECT_DIR$/../../GoldenGate/app/models/finder.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
     <file path="/application.css" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411602348742" ignored="false" />
+<<<<<<< HEAD
+>>>>>>> remotefile/master
+=======
+    <file path="/application.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411669659398" ignored="false" />
 >>>>>>> remotefile/master
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,18 +112,22 @@
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-22.5" vertical-offset="45" max-vertical-offset="1230">
               <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
 =======
             <state line="48" column="38" selection-start="1699" selection-end="1722" vertical-scroll-proportion="0.45">
+>>>>>>> remotefile/master
+=======
+            <state line="63" column="43" selection-start="2180" selection-end="2180" vertical-scroll-proportion="0.49866667">
 >>>>>>> remotefile/master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
             <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="795">
@@ -127,6 +139,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -223,6 +236,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> remotefile/master
     </leaf>
   </component>
   <component name="FindManager">
@@ -233,27 +248,34 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/response_node.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/main.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/script.js" />
         <option value="$PROJECT_DIR$/public/test.html" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+>>>>>>> remotefile/master
+=======
 >>>>>>> remotefile/master
         <option value="$PROJECT_DIR$/config/settings.yml" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/config/unicorn.rb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
+=======
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+>>>>>>> remotefile/master
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
@@ -326,6 +348,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdAssets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdAssets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -340,7 +376,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdAssets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdAssets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdAssets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdAssets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -735,11 +803,16 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27753934" sideWeight="0.9529737" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42857143" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20803443" sideWeight="0.97939396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.020606061" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> remotefile/master
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20803443" sideWeight="0.51757574" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48242423" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 >>>>>>> remotefile/master
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -777,6 +850,7 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1230">
@@ -786,10 +860,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/config/settings.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/test.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -800,10 +880,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="34" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="60" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/settings.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -814,10 +900,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="53" selection-start="1470" selection-end="1491" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/config/initializers/00-load_lib.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -828,10 +920,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/config/initializers/01-base_settings.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -842,10 +940,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="20" selection-start="47" selection-end="52" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -863,20 +967,28 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
 =======
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+=======
+    <entry file="file://$PROJECT_DIR$/config/base.rb">
+>>>>>>> remotefile/master
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
+    <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="16" column="97" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
+=======
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -886,6 +998,11 @@
     <entry file="file://$PROJECT_DIR$/config/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="63" selection-start="1177" selection-end="1237" vertical-scroll-proportion="0.59752744">
 >>>>>>> remotefile/master
           <folding />
         </state>
@@ -906,19 +1023,20 @@
 =======
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+        <state line="59" column="0" selection-start="2780" selection-end="2780" vertical-scroll-proportion="0.4642857">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="60" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2782956">
           <folding />
 >>>>>>> remotefile/master
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.tablesorter.min.js">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -934,10 +1052,16 @@
 =======
         <state line="129" column="60" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ZeroClipboard.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -948,10 +1072,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="18" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/config/initializers/secret_token.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/ZeroClipboard.swf">
       <provider selected="true" editor-type-id="text-editor">
@@ -992,20 +1122,28 @@
           <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
 =======
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
+>>>>>>> remotefile/master
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="14" column="26" selection-start="296" selection-end="303" vertical-scroll-proportion="-8.75">
+>>>>>>> remotefile/master
+=======
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1024,12 +1162,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="23" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
 >>>>>>> remotefile/master
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> remotefile/master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state vertical-scroll-proportion="-22.5" vertical-offset="45" max-vertical-offset="1230">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
@@ -1051,6 +1195,9 @@
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
 =======
         <state line="48" column="38" selection-start="1699" selection-end="1722" vertical-scroll-proportion="0.45">
+>>>>>>> remotefile/master
+=======
+        <state line="63" column="43" selection-start="2180" selection-end="2180" vertical-scroll-proportion="0.49866667">
 >>>>>>> remotefile/master
           <folding />
         </state>
