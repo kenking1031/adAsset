@@ -4,8 +4,8 @@
     <list default="true" id="0f41a48a-0752-4093-b40b-2edfd90296a3" name="Default" comment="" />
     <ignored path="AdAssets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411620534812" ignored="false" />
-    <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411620421485" ignored="false" />
+    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411623074691" ignored="false" />
+    <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411623441048" ignored="false" />
     <file path="/application_helper.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411432747209" ignored="false" />
     <file path="/application.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411433930453" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-triggers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
@@ -100,7 +100,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="60" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.7">
+            <state line="20" column="31" selection-start="797" selection-end="797" vertical-scroll-proportion="0.5">
               <folding />
             </state>
           </provider>
@@ -118,7 +118,7 @@
       <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="56" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
+            <state line="129" column="60" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -855,14 +855,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="56" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
+        <state line="129" column="60" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="60" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.7">
+        <state line="20" column="31" selection-start="797" selection-end="797" vertical-scroll-proportion="0.5">
           <folding />
         </state>
       </provider>

@@ -123,6 +123,12 @@ table{
 #keywords thead {
   cursor: pointer;
   background: #330000;
+  .bi-direction{
+    background: url('/assets/bi-direction.png') no-repeat 130px 10px;
+  }
+  .bi-direction-1{
+    background: url('/assets/bi-direction.png') no-repeat 100px 10px;
+  }
 }
 #keywords thead tr th {
   font-weight: bold;
