@@ -2,7 +2,7 @@ class HomeController < ApplicationController
 
   def index
 
-    @message = "Welcome to Watchable Ad Assets Page"
+    @message = "Watchable Ad Assets"
 
     @channel_videos = Finder.find($MidTierToken, nil, nil, nil, "channels", nil, nil, nil, nil, nil, nil, "/api/web/admin/search/channels/"+SiteConfig.CHANNEL_ID+"/videos")[0]
 

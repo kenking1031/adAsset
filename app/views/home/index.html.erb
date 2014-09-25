@@ -18,7 +18,7 @@
       <th><span>Thumbnail</span></th>
       <th><span>Title</span></th>
       <th><span>Time</span></th>
-      <th><span>Url</span></th>
+      <th><span>URL</span></th>
       <th></th>
     </tr>
   </thead>
@@ -32,7 +32,7 @@
         <td><img src="<%= video["thumbnail"] %>"></td>
         <td ><%= video["title"] %></td>
         <td ><%=DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
-        <td ><div class="urlFt"><textarea id="<%=textId %>" ><%= word_wrap(video["play_url"]) %></textarea></div></td>
+        <td ><div class="urlFt" onClick="body.style.overflow='hidden';firepopup();"><textarea id="<%=textId %>" ><%= word_wrap(video["play_url"]) %></textarea></div></td>
         <td ><button id="<%=buttonId %>" data-clipboard-target="<%= textId %>">Copy URL</button></td>
 
       </tr>
