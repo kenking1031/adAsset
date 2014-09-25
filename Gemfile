@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'site_config', '>= 0.0.1'
 gem 'httparty'
 gem 'json'
+gem 'spinjs-rails'
 
 gem 'jquery-rails'
 #gem 'zeroclipboard-rails', '~> 0.1.0'
