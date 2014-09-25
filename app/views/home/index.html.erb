@@ -37,7 +37,7 @@
         <td ><%= video["title"] %></td>
         <td ><%=DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
         <td ><div class="urlFt"><textarea id="<%=textId %>" ><%= word_wrap(video["play_url"]) %></textarea></div></td>
-        <td ><button id="<%=buttonId %>" data-clipboard-target="<%= textId %>">Copy URL</button></td></td>
+        <td ><div class="button_container"><div class="msg_box">Copied</div><div id="<%=buttonId %>" data-clipboard-target="<%= textId %>" class="buttonFt">Click to Copy</div></div></td></td>
 
       </tr>
 
@@ -46,7 +46,6 @@
           {
               var buttonId = $("#<%= buttonId %>");
               var textId = $("#<%= textId %>");
-              var testerId = $("#<%=testerId %>");
               var clientTarget = new ZeroClipboard(buttonId, {
                   moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
                   debug: false
@@ -58,7 +57,10 @@
 
                   clientTarget.on( "complete", function(clientTarget, args) {
                       clientTarget.setText( args.text );
-                      testerId.fadeIn();
+                      $(this).css('backgroundColor','#ccc');
+                      $(this).parent().find('.msg_box').fadeIn();
+                      _self = $(this);
+                      setTimeout(function(){_self.parent().find('.msg_box').fadeOut();},1500);
                   } );
               } );
 

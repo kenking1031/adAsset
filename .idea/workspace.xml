@@ -4,8 +4,8 @@
     <list default="true" id="0f41a48a-0752-4093-b40b-2edfd90296a3" name="Default" comment="" />
     <ignored path="AdAssets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411607324231" ignored="false" />
-    <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411598821557" ignored="false" />
+    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411620534812" ignored="false" />
+    <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411620421485" ignored="false" />
     <file path="/application_helper.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411432747209" ignored="false" />
     <file path="/application.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411433930453" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-triggers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
@@ -54,7 +54,7 @@
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-option-sort-key.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-parsers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-option-sort-force.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
-    <file path="/*.regexp" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411589712543" ignored="false" />
+    <file path="/*.regexp" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411619398816" ignored="false" />
     <file path="/Gemfile" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411518736837" ignored="false" />
     <file path="/home_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411526107071" ignored="false" />
     <file path="/Dummy.txt" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411605212067" ignored="false" />
@@ -100,7 +100,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="43" selection-start="568" selection-end="568" vertical-scroll-proportion="-0.54285717">
+            <state line="59" column="60" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.7">
               <folding />
             </state>
           </provider>
@@ -118,7 +118,7 @@
       <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="22" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
+            <state line="32" column="56" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -208,12 +208,12 @@
         <option value="$PROJECT_DIR$/config/settings.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/unicorn.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
       </list>
     </option>
@@ -676,8 +676,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20803443" sideWeight="0.93939394" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.060606062" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20803443" sideWeight="0.97939396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.020606061" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -795,13 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="22" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/settings.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="20" selection-start="47" selection-end="52" vertical-scroll-proportion="0.0">
@@ -860,9 +853,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="56" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="43" selection-start="568" selection-end="568" vertical-scroll-proportion="-0.54285717">
+        <state line="59" column="60" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.7">
           <folding />
         </state>
       </provider>

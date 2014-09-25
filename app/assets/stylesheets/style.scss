@@ -7,7 +7,35 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+.button_container{
+  position: relative;
+  float: left;
+  .msg_box{
+    position: absolute;
+    left:-135px;
+    bottom:-30px;
+    border: 1px solid #fff;
+    background-color: #3D3D3D;
+    color:#fff;
+    font-size: 10px;
+    text-align: center;
+    width:60px;
+    height:18px;
+    padding:5px;
+    display: none;
+  }
+  .buttonFt{
+    border: 1px solid #8dbdd8;
+    padding: 5px 5px;
+    background: #000000;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    color:#fff;
+    border-radius: 10px;
 
+  }
+}
 button{
   width:100px;
   height:30px;
