@@ -12,12 +12,13 @@
 
 
 <div id="header"><%= @message %></div>
+<div id ="subheader">Click on Title or Time to sort</div>
 <table id="keywords" class="tablesorter" cellspacing="0" width="100%">
   <thead>
     <tr>
       <th><span>Thumbnail</span></th>
-      <th><span>Title</span></th>
-      <th><span>Time</span></th>
+      <th class="bi-direction"><span>Title</span></th>
+      <th class="bi-direction-1"><span>Time</span></th>
       <th><span>URL</span></th>
       <th></th>
     </tr>
@@ -25,22 +26,27 @@
   <tbody>
   <% rowIndex = 0 %>
   <% for video in @data %>
+
   <% buttonId = "target-to-copy#{rowIndex}" %>
   <% textId = "target-to-copy-text#{rowIndex}" %>
+  <% testerId= "test#{rowIndex}" %>
+
       <tr>
 
         <td><img src="<%= video["thumbnail"] %>"></td>
         <td ><%= video["title"] %></td>
         <td ><%=DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
         <td ><div class="urlFt" onClick="body.style.overflow='hidden';firepopup();"><textarea id="<%=textId %>" ><%= word_wrap(video["play_url"]) %></textarea></div></td>
-        <td ><button id="<%=buttonId %>" data-clipboard-target="<%= textId %>">Copy URL</button></td>
+        <td ><div class="button_container"><div class="msg_box">Copied</div><div id="<%=buttonId %>" data-clipboard-target="<%= textId %>" class="buttonFt">Click to Copy</div></div></td></td>
 
       </tr>
 
-
       <script>
+
+
           $(document).ready(function()
           {
+//              $('#keywords').spin();
               var buttonId = $("#<%= buttonId %>");
               var textId = $("#<%= textId %>");
               var clientTarget = new ZeroClipboard(buttonId, {
@@ -54,21 +60,41 @@
 
                   clientTarget.on( "complete", function(clientTarget, args) {
                       clientTarget.setText( args.text );
-                      textId.fadeIn();
+                      $(this).css('backgroundColor','#ccc');
+                      $(this).parent().find('.msg_box').fadeIn();
+                      _self = $(this);
+                      setTimeout(function(){_self.parent().find('.msg_box').fadeOut();},1500);
                   } );
               } );
 
           });
       </script>
-
       <% rowIndex+=1 %>
   <% end %>
 
   </tbody>
 </table>
+
 <script type="text/javascript">
     $(function(){
-        $('#keywords').tablesorter();
+        $('#keywords').tablesorter( {
+                headers: {
+            // assign the secound column (we start counting zero)
+            0: {
+                // disable it by setting the property sorter to false
+                sorter: false
+            },
+            // assign the third column (we start counting zero)
+            3: {
+                // disable it by setting the property sorter to false
+                sorter: false
+            },
+            4: {
+                // disable it by setting the property sorter to false
+                sorter: false
+            }
+        }
+        });
     });
 
 </script>

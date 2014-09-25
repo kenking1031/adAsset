@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require ZeroClipboard.js
+//= require jquery.spin
 //= require_tree .
 
 
