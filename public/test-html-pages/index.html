@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Player Platform</title>
+
+	<link href="/test-html-pages/css/index.css" rel="Stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/test-html-pages/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/test-html-pages/js/playerControls.js"></script>
+    <script type="text/javascript" src="/test-html-pages/js/date.format.js"></script>
+    <script type="text/javascript" src="/test-html-pages/js/swfobject.js"></script>
+    <script type="text/javascript">
+            var swfVersionStr = "0";
+            var xiSwfUrlStr = "";
+            var flashvars = {configurationUrl: "http://nh.lab.xcal.tv/pauk/pauk_desktop.xml", deviceId: "TEST_PLAYER_NH" };
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#000000";
+            params.allowscriptaccess = "always";
+            params.allowfullscreen = "true";
+            params.wmode = "direct";
+            var attributes = {};
+            attributes.id = "PlayerPlatformAPI";
+            attributes.name = "PlayerPlatformAPI";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "/test-html-pages/PlayerPlatformAPI.swf", "flashContent",
+                "1280", "720",
+                swfVersionStr, xiSwfUrlStr,
+                flashvars, params, attributes);
+
+            $.urlParam = function(name){
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                if (results==null){
+                    return null;
+                }
+                else{
+                    return results[1] || 0;
+                }
+            }
+
+        window.onload = function(){
+            var playable = $.urlParam('playableURL');
+            $('#streamURL').val(playable);
+
+            var drmToken = $.urlParam('drmToken');
+            $('#drmToken').val(drmToken);
+        }
+    </script>
+</head>
+<body>
+	<div id="outer">
+	<table>
+		<tr>
+            <form name="mainForm" onsubmit="return false;">
+                <input type="text" id="streamURL" value="Enter Stream Url Here" name="Stream URL" size="200"/>
+                <br/>
+                <input type="text" id="drmToken" value="" name="DRM Token" size="200"/>
+                <br/>
+                <input type="button" value="Tune" onclick="setContentURL($('#streamURL').val(),createContentOptionsAAEID($('#drmToken').val(), 'test', 'test'))" />
+            </form>
+        </tr>
+        <tr>
+        <td>
+			<div id="flashContent"></div>
+			<div id="controls">
+				<div id="playpause"><button class="play"></button></div>
+				<canvas id="scrubber" height="8"></canvas>
+				<span id="display"></span>
+				<span id="duration"></span>
+			</div>
+    <table>
+        <tr>
+            <td>
+                <a href="javascript:setChannelStoreAsset('http://nh.lab.xcal.tv/cory/bunnyCustom/index.m3u8', '123','456','758',createChannelStoreMetadata());">
+                    Channel Store Big Buck Bunny
+                </a>
+                <br/>
+                <a href="javascript:setContentURL('http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8', createContentOptionsSTRID('123321'));">
+                    unencrypted Linear HLS
+                </a>
+                <br/>
+                <a href="javascript:setContentURL('http://odol-atsec-pan-01.linear-nat-hds.xcr.comcast.net/hls/STZHD_HD_NAT_11716_0_7509424492416089163_HLS/STZHD_HD_NAT_11716_0_7509424492416089163_HLS.m3u8', createContentOptionsSTRID('123321'));">
+                    Cloud Linear HLS
+                </a>
+                <br/>
+
+                <a href="javascript:setContentURL('http://ccr.linear-fre-hds.xcr.comcast.net/hls/TNTHD_HD_FRE_11911_1_7713479197952226163_HLS/TNTHD_HD_FRE_11911_1_7713479197952226163_HLS.m3u8', createContentOptionsSTRID('123321'));">
+                    Cloud Linear HLS SAP
+                </a>
+                <br/>
+                <a href="javascript:setContentURL('http://odol-atsec-pan-01.cdvr-gbr-fox.xcr.comcast.net/1191148406870020748/1191148406870020748.m3u8', createContentOptionsRID('testRecordingId'));">
+                    Cloud Recording HLS
+                </a>
+                <br/>
+                <a href="javascript:setContentURL('http://ccr.col-jitp.xcr.comcast.net/omg08/67/649/CARTOONNET_CART1003171401013877_mo_LVL04/CARTOONNET_CART1003171401013877_mo_LVL04.m3u8', createContentOptionsRID('testRecordingId'));">
+                    Cloud VOD HLS
+                </a>
+                <br/>
+
+                <a href="javascript:setContentURL('http://ccr.cim-jitp.top.comcast.net/cimomg08/OPUS/208/894/31356483505/1369765928799/31356483505_1369765924654_2850000_2.m3u8', createContentOptionsVOD('testTid','26178627912'));">
+                    VOD HLS
+                </a>
+                <br/>
+                <a href="javascript:setContentURL('http://nh.lab.xcal.tv/cory/bunny1/index.m3u8', createContentOptionsAAEID('test','test','test'));">
+                    Big Buck Bunny - Unencrypted Asset
+                </a>
+                <a href="javascript:setContentURL('http://video.fandango.com/FandangoMovies/324392-4/324392-4-2500.mp4', createContentOptionsAAEID('test','test','test'));">
+                   MP4 1</a>
+                <br/>
+                <a href="javascript:setContentURL('http://video.fandango.com/FandangoMovies/304937-1/304937-1-2500.mp4', createContentOptionsAAEID('test','test','test'));">
+                    MP4 2</a>
+                <br/>
+            </td>
+            <td>
+                Volume: <a href="javascript:setVolume(0);">0%</a> | <a href="javascript:setVolume(.5);">50%</a> |  <a href="javascript:setVolume(1);">100%</a><br />
+                <br />
+                <a href="javascript:play();">Play</a> | <a href="javascript:stop();">Stop</a> | <a href="javascript:pause();">Pause</a><br />
+                <div id="alternateChoices"></div><br />
+                Playback Speed: <a href="javascript:setSpeed(.2, 0);"> Slow Motion</a> |  <a href="javascript:setSpeed(1, 0);">Regular</a><br />
+                Playback Speed: <a href="javascript:setSpeed(2, 0);"> Fast Forward 2x</a> |  <a href="javascript:setSpeed(8, 0);">Fast Forward 8X</a><br />
+                Playback Speed: <a href="javascript:setSpeed(-2, 0);"> Rewind 2x</a> |  <a href="javascript:setSpeed(-8, 0);">Rewind 8X</a><br />
+                <br />
+                CC's<a href="javascript:setClosedCaptionsEnabled(true)">ON</a>|<a href="javascript:setClosedCaptionsEnabled(false)">OFF</a>
+            </td>
+            <td>
+                <a href="javascript:setDimensionsOfVideo(400, 300);">Video(400,300)</a><br />
+                <a href="javascript:setDimensionsOfVideo(800, 450);">Video(800,450)</a><br />
+                <a href="javascript:setDimensionsOfVideo(1280, 720);">Video(1280,720)</a><br />
+                <br/>
+                <a href="javascript:configureAnalytics();">Enable Analytics</a><br />
+                <a href="javascript:setSendFragmentInfo(true) ;">Send Fragment Info Events</a><br />
+            	<a href="javascript:configureEmergencyAlerts('PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxuczI6eGNhbC1hdXRoLW1lc3NhZ2UgeG1sbnM6bnMyPSJ1cm46Y2NwOmRldmlkOmRybSIgdmVyc2lvbj0iMyI+DQogIDxhdHRyaWJ1dGUga2V5PSJtZXNzYWdlOnByb3RlY3Rpb24iPk1JSU1ZVENCNHd3UmJXVnpjMkZuWlVGMGRISnBZblYwWlhNd2djMHdEQXdIZG1WeWMybHZiZ3dCTXpBZERBVnViMjVqWlFRVVNTL1IxZGg5ZjV6YjdaYXYyamNHSllDQTFxVXdHZ3dKYVhOemRXVkVZWFJsRncweE16QXpNVEl4T1RRNU16SmFNQm9NQ1c1dmRFSmxabTl5WlJjTk1UTXdNekV5TVRrME9UTXlXakFkREF4dWIzUlBiazl5UVdaMFpYSVhEVEV6TURNeE56RTVORGt6TWxvd0lnd0xiV1Z6YzJGblpWUjVjR1VNRTNoallXeFRaWE56YVc5dVEzUjRWRzlyWlc0d0Rnd0dhWE56ZFdWeURBUjRjMk56TUJNTUNuSmxZMmx3YVdWdWRITXdCUXdEWkd4ek1JSGVEQTF0WlhOellXZGxSR2xuWlhOME1JSE1NQmtNRDJScFoyVnpkRUZzWjI5eWFYUm9iUXdHYzJoaE1qVTJNREVNRFcxbGMzTmhaMlZFYVdkbGMzUUVJSkMvQnlOK2ExRkhXUXhPcy9YRTlwLy9URXAxYndQUDRvYWU2VjNvbHFRQU1EME1HWEJzWVdsdWRHVjRkRUYwZEhKcFluVjBaWE5FYVdkbGMzUUVJT0Z0dGZYZHFPdUpkNUFlY29SMVlRYm0zNVA2VTRidGVFZTI2eFVVejczZ01EME1HV1Z1WTNKNWNIUmxaRUYwZEhKcFluVjBaWE5FYVdkbGMzUUVJRVJiSVA3a2Y5UWdzMlBubHFiUHJDbDdTSGR1ckZEVXY1dHNmZFk5djFqRU1JSUUvUXdPWVhWMGFHVnVkR2xqWVhScGIyNHdnZ1RwTUJZTUNXRnNaMjl5YVhSb2JRd0pjMmhoTWpVMlVuTmhNQmNNQzJ0bGVVbHVabTlVZVhCbERBaDROVEE1UkdGMFlUQ0NCTFFNQjJ0bGVVbHVabThFZ2dTbk1JSUVvekNDQTR1Z0F3SUJBZ0lDQS9Rd0RRWUpLb1pJaHZjTkFRRUZCUUF3Z1k0eEN6QUpCZ05WQkFZVEFsVlRNUXN3Q1FZRFZRUUlEQUpRUVRFVk1CTUdBMVVFQnd3TVVHaHBiR0ZrWld4d2FHbGhNU2N3SlFZRFZRUUtEQjVEYjIxallYTjBJRU52Ym5abGNtZGxaQ0JRY205a2RXTjBjeUJNVEVNeElqQWdCZ05WQkFzTUdYVnlianBqYjIxallYTjBPbU5qY0Rwd2Eya3RZM010ZEdReERqQU1CZ05WQkFNTUJWUkNNREF5TUI0WERURXlNRFF4TURBMU5Ua3pORm9YRFRFek1EUXhNREExTlRrek5Gb3dnWmt4Q3pBSkJnTlZCQVlUQWxWVE1Rc3dDUVlEVlFRSURBSlFRVEVWTUJNR0ExVUVCd3dNVUdocGJHRmtaV3h3YUdsaE1TY3dKUVlEVlFRS0RCNURiMjFqWVhOMElFTnZiblpsY21kbFpDQlFjbTlrZFdOMGN5Qk1URU14S0RBbUJnTlZCQXNNSDNWeWJqcGpiMjFqWVhOME9tTmpjRHB3YTJrdFkzTXRhVzUwT25oelkzTXhFekFSQmdOVkJBTU1DbFJDTURBd01EQTVNREl3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRRDBOSnlrVjVLdHcwVnlLancwMDE3b1d3dTdLRmdBcTBVbDNBa3VUUGNVZGx3bVZLdTltRTd5eGNlcXNTVllUYnhjd1ZMQnVEd1E4SmpvZnZEQ3ZXVXl6UDZtMmI0c2dYdWI3MXhHMW9Xc05ZTGZSVjNoYkduaEpFYTZuSmtyWnV5S2tMcHdRdFRPRWorWkU1d1dTQk8yZFA2OEk0WlgrdHNVWCswYUlPMWFiZ1JXKzFtSlkyckU4dnBQb0RWUzBhUW1OYlNmL3NwS2FSdHI2L2t6cjVPL25OS2FXelNFM1RveVhCQ2llZGV5d3dRVU5NaXAwOXVvd3VWZzVEcm5PZUNDcDZXUkRUSWs2RTRmY25ibUNuVDZSaTNjeEVBeEsyazB0UFVYME5oV2p1VGhSQldsU1pDMUFuTE9VN2phVExRYUlFYVVFT3BXSmZvQjI2N0tMVWRqQWdNQkFBR2pnZjB3Z2Zvd0hRWURWUjBPQkJZRUZQQU5UY0VaVndRUzFXVm9IUFRMb2ZPcUVtYlRNQTRHQTFVZER3RUIvd1FFQXdJRm9EQ0J1Z1lEVlIwakJJR3lNSUd2Z0JUU2RsSmtENXFpOHBubzZSSHRIS0k4UWZ0M3JxR0JrNlNCa0RDQmpURUxNQWtHQTFVRUJoTUNWVk14Q3pBSkJnTlZCQWdNQWxCQk1SVXdFd1lEVlFRSERBeFFhR2xzWVdSbGJIQm9hV0V4SnpBbEJnTlZCQW9NSGtOdmJXTmhjM1FnUTI5dWRtVnlaMlZrSUZCeWIyUjFZM1J6SUV4TVF6RWhNQjhHQTFVRUN3d1lkWEp1T21OdmJXTmhjM1E2WTJOd09uQnJhUzFqTFhSaE1RNHdEQVlEVlFRRERBVlVRakF3TVlJQkFqQU1CZ05WSFJNQkFmOEVBakFBTUEwR0NTcUdTSWIzRFFFQkJRVUFBNElCQVFCSVRqVExUcEdERUhMTlFCek0zVFNYVk9TZEw1bm0vU0duNHlqSjRPQU5ySG5NQk5JQmNlOXdnZ1ZHUFh4ZGlrRGo0SlQ4UUl3TnZyWmhsNVZkcHRSREdkWTVTUU5vQVpsaFdVSVhxTGFwc1pkYVZOL1pmV2xFN1BzR1llaEg2aFFNTExiait3QXVyY1dQcmpFazFaVDVTcEN6eXhIU1BJdllKWE53dFFuU0IwS0lodlBCbCs3V2RIWTVOek55NHlEMDkvZnYrZjNRZjhGNUd0K2g5NUhjMDVQNVVHdDhkSnAwd1dQWHczZm1XT3pkVjMzZVRGSjdqRmU2NEpTRlBNYVFabHpUMTYxbnEwZ29YOFJ0STZJWWRSanUxbExiUS9ucDB1TnJmQm11OUp1VWxkcEJyVlM3clE4VGowU1QweVAzajVxK2UwbktpMURlcnVaK0c5Wk5NR29NREd0bGVWUnlZVzV6Y0c5eWREQmFNQjRNQ1dGc1oyOXlhWFJvYlF3UmNuTmhUMkZsY0ZOb1lUSTFOazFuWmpFd0ZRd0xhMlY1U1c1bWIxUjVjR1VNQm5nMU1EbEpaREFoREFkclpYbEpibVp2TUJZRUZLc0J1TGwrTDJnSTFWR0crL3BVSWltbHlFcFhNSUcrREFwbGJtTnllWEIwYVc5dU1JR3ZNQmdNQ1dGc1oyOXlhWFJvYlF3TFlXVnpRMkpqVUd0amN6VXdIZ3dMYTJWNVNXNW1iMVI1Y0dVTUQyTnBjR2hsY2t0bGVWTm9ZVEkxTmpBckRBZHJaWGxKYm1adkJDQUtMb2FYTTdqUUM5Qzk3enRIWG13dVVielFRdS93MkVqcG8rdmJRcDViRnpBUkRBZHJaWGxVZVhCbERBWmhaWE15TlRZd0Znd0RhMlJtREE5amIyNWpZWFJMWkdaVGFHRXlOVFl3RXd3R2FYWlVlWEJsREFsemFYWlRhR0V5TlRZd0Jnd0NhWFlGQURDQ0JHZ01DbU5wY0dobGNrUmhkR0V3Z2dSWU1JSUJEZ3dJWVhWMGFFUmhkR0VFZ2dFQWxkSWtPc05YUk5DRm1NdjIzYXRlSzQxdFlwNkp3RFl6YjVBbjNkUE94U3czVFBuMHdXNm1TWlVLTUUzSnZkN2R4ZWlXaGN5S0JSRnlaMXZPSUZObkhudlBMNGovUGE5TWNzckF4UVViOEg5cVpraTlwb0VVYVk3UFJRMVdBblE1MHhxNWh4cUtoMjZDT2hIdE1iRUxkb0pQWDk1N1RiWVdnaHdYamJqMFhzSjBsMW9lS2kyd0g4bEtMWkJjSlcrbW9wa1BIUFFTUmxRV3hCaTdKc1FLbnNmc1BwbjhYWThtdVdRbUNOWHNxbU9xQ3NxMG5TaU5LQnM2RHFGbndES1Nsc2FNUFlLSTNtSE9qZERwMXkxOXllUXNkRG9RRXBPOVROSngvQnFIaXZJYUFNR1ZxSVcvN1YvTHU1bEtWNHlISi85QXdwY2g5ZFFZSlJJU1U1YjExakNDQVJvTUVHdGxlVlJ5WVc1emNHOXlkRVJoZEdFd2dnRUVCSUlCQUxIOXJQa1JiZFd3M3dyZXBWWnNsdmpLOUxubjlZbGhEMGFTMWtoc0oyRDJyTzJSY29zaTFzUzVoekJTUjAzZkJSV2xHTEd3TlRFVjhweGNRWExNMHhsTkxUbk1ScjFNVStJNXVVVldSN0dLMmJwcUNXUktUd3FUM3NkT1RWZVNaV1B3REF1TGVrL0xWMzkva3NPeHZGVkl5ZVg0U2NnYkVxbEY1TDQzcHlyRGFQUTZPeXFGNS9iYzhJOGExYU5icnpDM3RFakpIaEtKMWwwVndTYnlueldpd3NLclcvMitMZnVieUZoVXZyT2tNbFF3ZTNQUEwxcjVXc3UrU3l1WXJWOVd4cG1tak5MR28zUHJoeThnQ1ZXeFQ1V1Fxa0VFMVB5SFpmeU9pajZKbStWZTNRRUN3NGdGQ2VYSnRiODMxMEI1WFZVYjhFQUUrSmRqK0FHZ0YvNHdnZ0lrREE1amFYQm9aWEowWlhoMFJHRjBZUVNDQWhBSm9VRGc2WUErNjcyM2JRZFZlRzQ3aGljWk5uU0U1SC9YaU92bjA1OHJ6M3MvTmFuMk1QM0xlQ0UwZFBKL1VDZWY0RGUrWGFuWjZjMC9ZN3JaelpHQkdPWER4d3RMcXFCZ0pYN01sN2NBcElpTFNLdVZxd1RNMnA1WTcweVhsMVBKc0Q0Q2ZINGRjQkhvTUtrRkdoZTlYWXJXZnpMaWFGNXdWNUxIeGYvL2tmVjZQRzBQMzlMbHIvRjk2UEVDcU9WdVNXL0VLVmMxaVVZMS80eDB1YzEwcWtPTjZkRVV1b2Z3c3VTRDd4UnhTV1llc2ZoSzRYOU5DK2ZHSm5aWWEzV0t3UHRJRXRsS3IxZHBIYXUzYUd4SUpmVWJweElZalRGV2J0SWlDWm03Z09SdXozUmxSd3F3VW1SNDBpVFpRdGo4MkNmbEswZGl6eEhmdmExTE0yVmZYR2JIN2FJY0hiWmdZRWRuY0dHWE95Y3BXWVQ3L1VSVlo3OENPbHdRTEhlZGZQQ3VkRU13U1V4bWJ4dHZJN2lhMEc3SXMyNHZnRGF4WFRRUGZteVNSUER6UndyVnQ2NjFHZExlNWIxV3RPSFB3L25xc3V1b24weitmZlk4NFk4bXNnMVBhWmZXYnZpeUFtTGRvMFZOdEJ5U1M4MHV5bmcwdWsvdE9nd1dablQ5K1krWWdPejZYdUdKaWZjekdhdTM0RzJhckRJMzQrdzZTV3ZHdkZaTFlWc09uWkIzT1RnRWMvMXVYcTRURDd4ZTA5dVJGWUh6RWJFeUJDUXJzcmRUd1o3MTlOMlBSbHVpS2ZNbkpjRjI5b3N2blRpM2VUOVZ5OE1EYUx6VGMvSzArS2RQc1FMbjkwVW1LTzR3Qzd4a0JaODlNc3c2M0M1Mm8rSkNOUWFpQXhVd081K0t6U2V1MDRqbFhlbTJjY1E9PC9hdHRyaWJ1dGU+DQogIDxhdHRyaWJ1dGUga2V5PSJtZXNzYWdlOnR5cGUiPnhjYWxTZXNzaW9uQ3R4VG9rZW48L2F0dHJpYnV0ZT4NCiAgPGF0dHJpYnV0ZSBrZXk9Im1lc3NhZ2U6aWQiPjNHNC1TQVotODc2LUU3QTwvYXR0cmlidXRlPg0KICA8YXR0cmlidXRlIGtleT0ic2VydmljZTp4Y2FsOmlkIj54Y2FsLXF1YW50dW0tMS4wPC9hdHRyaWJ1dGU+DQogIDxhdHRyaWJ1dGUga2V5PSJzZXJ2aWNlOnhjYWw6cHJvZHVjdCI+cXVhbnR1bTwvYXR0cmlidXRlPg0KICA8YXR0cmlidXRlIGtleT0ic2VydmljZTp4Y2FsOnZlcnNpb24iPjEuMDwvYXR0cmlidXRlPg0KICA8YXR0cmlidXRlIGtleT0iZGV2aWNlOnByb3ZpZGVycyI+Zmxhc2hBY2Nlc3M8L2F0dHJpYnV0ZT4NCiAgPGF0dHJpYnV0ZSBrZXk9ImRldmljZTpmbGFzaEFjY2VzczppZCI+Y2NjZmYxMGM1ZTYyMzhhYzZhYTJhZjY5MmZlOWZkNWE8L2F0dHJpYnV0ZT4NCiAgPGF0dHJpYnV0ZSBrZXk9ImRldmljZTpmbGFzaEFjY2Vzczp2ZXJzaW9uIj40LjA8L2F0dHJpYnV0ZT4NCiAgPGF0dHJpYnV0ZSBrZXk9ImRldmljZTpmbGFzaEFjY2Vzczp0eXBlIj5Qb3J0aW5nS2l0PC9hdHRyaWJ1dGU+DQogIDxhdHRyaWJ1dGUga2V5PSJkZXZpY2U6Zmxhc2hBY2Nlc3M6Y2F0ZWdvcnkiPkFuZHJvaWQ8L2F0dHJpYnV0ZT4NCiAgPGF0dHJpYnV0ZSBrZXk9ImRldmljZTpmbGFzaEFjY2Vzczpsb2NhdGlvbklwIj42OS4yNTIuMTIzLjQ4PC9hdHRyaWJ1dGU+DQogIDxhdHRyaWJ1dGUga2V5PSJkZXZpY2U6Zmxhc2hBY2Nlc3M6YXV0aG5TZWN1cml0eUxldmVsIj4zMDA8L2F0dHJpYnV0ZT4NCiAgPGF0dHJpYnV0ZSBrZXk9ImRldmljZTp4Y2FsOmxvY2F0aW9uSXAiPjY5LjI0MS45Ny4xPC9hdHRyaWJ1dGU+DQogIDxhdHRyaWJ1dGUga2V5PSJkZXZpY2U6eGNhbDpsb2NhdGlvbkluSG9tZSI+VFJVRTwvYXR0cmlidXRlPg0KICA8YXR0cmlidXRlIGtleT0iZGV2aWNlOnhjYWw6bG9jYXRpb25PblBsYW50Ij5UUlVFPC9hdHRyaWJ1dGU+DQogIDxhdHRyaWJ1dGUga2V5PSJkZXZpY2U6eGNhbDpsb2NhdGlvblZvZCI+MTIzNDEyMzQxMjM0OTI1ODExMDwvYXR0cmlidXRlPg0KICA8YXR0cmlidXRlIGtleT0iZGV2aWNlOnhjYWw6bG9jYXRpb25Ib21lWmlwIj4xOTEwMzwvYXR0cmlidXRlPg0KICA8YXR0cmlidXRlIGtleT0iZGV2aWNlOnhjYWw6bG9jYXRpb25TZXNzaW9uWmlwIj4xOTEwMzwvYXR0cmlidXRlPg0KICA8YXR0cmlidXRlIGtleT0iZGV2aWNlOnhjYWw6bG9jYXRpb25TZXNzaW9uVGltZXpvbmUiPkFtZXJpY2EvTmV3X1lvcms8L2F0dHJpYnV0ZT4NCiAgPGF0dHJpYnV0ZSBrZXk9ImRldmljZTp4Y2FsOmxvY2F0aW9uSG9tZVRpbWV6b25lIj5BbWVyaWNhL05ld19Zb3JrPC9hdHRyaWJ1dGU+DQogIDxhdHRyaWJ1dGUga2V5PSJtZXNzYWdlOmlzc3VlRGF0ZSI+MjAxMy0wMy0xMlQxOTo0OTozMlo8L2F0dHJpYnV0ZT4NCiAgPGF0dHJpYnV0ZSBrZXk9Im1lc3NhZ2U6bm90QmVmb3JlIj4yMDEzLTAzLTEyVDE5OjQ5OjMyWjwvYXR0cmlidXRlPg0KICA8YXR0cmlidXRlIGtleT0ibWVzc2FnZTpub3RPbk9yQWZ0ZXIiPjIwMTMtMDMtMTdUMTk6NDk6MzJaPC9hdHRyaWJ1dGU+DQo8L25zMjp4Y2FsLWF1dGgtbWVzc2FnZT4NCg0K') ;">Enable EAS</a><br />
+                <a href="javascript:enableLogging(true) ;">Enable Logging</a><br />
+       			<a href="javascript:acquireLicenseForOfflinePlayback($('#streamURL').val());"> Acquire License For Offline Playback</a><br />
+                <a href="javascript:acquireLicenseForStreaming($('#streamURL').val());"> Acquire License For Streaming </a><br />
+                <a href="javascript:acquireLocalLicense($('#streamURL').val());"> Acquire Local License </a><br/>
+                <a href="javascript:acquireLicenseForStreamingUsingCustomDrmKey($('#streamURL').val(),$('#drmToken').val());"> Acquire License Using Custom Drm Key </a>
+
+            </td>
+            <td>
+                <p>Current Bitrate: <span id="playbackRate"> </span></p>
+                <a href="javascript:getAvailableBitrates();">getAvailableBitrates()</a><br />
+                <p>Select Bitrate: <span id="bitrates"> </span></p><br />
+                <a href="javascript:getAvailableAudioTracks();">getAvailableAudioTracks()</a><br />
+                <p>Current Audio Track: <span id="audioTrack"> </span></p>
+            </td>
+            <td>
+            	<a href="javascript:getStartPosition();">getStartPosition</a><br />
+                <a href="javascript:getCurrentPosition();">getCurrentPosition</a><br />
+                <a href="javascript:getEndPosition();">getEndPosition</a><br />
+                <a href="javascript:getDuration();">getDuration</a><br />
+                <a href="javascript:getPlayerState();">getPlayerState</a><br />
+            </td>
+            <td>
+                <a href="javascript:log('log');">Log</a> <a href="javascript:logWrap(true);">Wrap</a>|<a href="javascript:logWrap(false);">NoWrap</a><br />
+            	<a href="javascript:getVersion();">Display Version</a><br />
+            	<a href="javascript:showDebug();">Show Debug</a><br />
+            </td>
+            <td>
+                <a href="javascript:setInitialBitrate(1474);">setInitialBitrate->1474</a><br />
+                <a href="javascript:configureComcastAds(1234);">configureComcastAds</a><br />
+                <a href="javascript:configureAuditudeAds();">configureAuditudeAds</a><br />
+                <a href="javascript:configureC3Ads();">configureC3Ads</a><br />
+            </td>
+        </tr>
+    </table>
+    </td>
+    <td>
+    <div id="log" class="log noWrap">
+        Log</div>
+        </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
+

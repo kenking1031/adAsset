@@ -1,13 +1,3 @@
-<head>
-  <meta charset="utf-8">
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-  <link href='/assets/style.scss' rel='stylesheet' type='text/css'>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-  <script src="http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.js"></script>
-  <script src="/assets/jquery.tablesorter.js"></script>
-
-</head>
-
 <div id="header"><%= @message %></div>
 <div id ="subheader">Click on Title or Time to sort</div>
 <table id="keywords" class="tablesorter" cellspacing="0" width="100%">
@@ -31,11 +21,10 @@
       <tr>
 
         <td><img src="<%= video["thumbnail"] %>"></td>
-        <td ><%= video["title"] %></td>
-        <td ><%=DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
-        <td ><div class="urlFt"><textarea id="<%=textId %>" ><%= word_wrap(video["play_url"]) %></textarea></div></td>
-        <td ><div class="button_container"><div class="msg_box">Copied</div><div id="<%=buttonId %>" data-clipboard-target="<%= textId %>"
-                                                                                 class="buttonFt">Click to Copy</div></div></td></td>
+        <td><%= video["title"] %></td>
+        <td><%= DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
+        <td><div class="urlFt" onClick="body.style.overflow='hidden';firepopup();"><textarea id="<%=textId %>"><%= word_wrap(video["play_url"]) %></textarea></div></td>
+        <td><div class="button_container"><div class="msg_box">Copied</div><div id="<%=buttonId %>" data-clipboard-target="<%= textId %>" class="buttonFt">Click to Copy</div></div></td></td>
 
       </tr>
 

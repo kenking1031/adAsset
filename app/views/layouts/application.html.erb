@@ -1,10 +1,40 @@
 <!DOCTYPE html>
     <head>
-      <title>Watchable Ad Assets</title>
+        <title>Watchable Ad Assets</title>
+        <meta charset="utf-8">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+        <link href='/assets/style.scss' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <script src="http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.js"></script>
+        <script src="/assets/jquery.tablesorter.js"></script>
 
-
+        <!--script type="text/javascript" src="/test-html-pages/js/jquery-1.4.2.min.js"></script-->
+        <script type="text/javascript" src="/test-html-pages/js/playerControls.js"></script>
+        <script type="text/javascript" src="/test-html-pages/js/date.format.js"></script>
+        <script type="text/javascript" src="/test-html-pages/js/swfobject.js"></script>
+        <script type="text/javascript">
+          var swfVersionStr = "0";
+          var xiSwfUrlStr = "";
+          var flashvars = {configurationUrl: "http://nh.lab.xcal.tv/pauk/pauk_desktop.xml", deviceId: "TEST_PLAYER_NH" };
+          var params = {};
+          params.quality = "high";
+          params.bgcolor = "#000000";
+          params.allowscriptaccess = "always";
+          params.allowfullscreen = "true";
+          params.wmode = "direct";
+          var attributes = {};
+          attributes.id = "PlayerPlatformAPI";
+          attributes.name = "PlayerPlatformAPI";
+          attributes.align = "middle";
+          swfobject.embedSWF(
+                  "/test-html-pages/PlayerPlatformAPI.swf", "flashContent",
+                  "800", "450",
+                  swfVersionStr, xiSwfUrlStr,
+                  flashvars, params, attributes);
+        </script>
 
     </head>
+
     <body class="home">
 
         <a href="/">
@@ -16,5 +46,34 @@
             <%= yield %>
           </div>
         </div>
+
+        <div id="overlay" onClick="body.style.overflow='auto';closepopup();">
+        </div>
+        <div id="fancybox">
+          <div id="flashContent"></div>
+          <div id="controls">
+            <div id="playpause"><button class="play"></button></div>
+            <canvas id="scrubber" height="8"></canvas>
+            <span id="display"></span>
+            <span id="duration"></span>
+            <div id="log" class="log">Log</div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+            function firepopup() {
+                document.getElementById('fancybox').style.left=($(window).width()-800)/2+'px';
+                document.getElementById('fancybox').style.top=($(window).height()-475)/2+$(window).scrollTop()+'px';
+                $('#overlay').fadeIn('fast');
+                setTimeout("$('#fancybox').fadeIn('fast')",200);
+                //setContentURL(streamURL,createContentOptionsAAEID('test', 'test', 'test'));
+                document.getElementById('PlayerPlatformAPI').setContentUrl('http://cilhlsvod-f.akamaihd.net/i/MP4/demo3/2014-09-23/1411488645672_fedbeans_8(8016_,R22MP464,R23MP4350,R23MP4500,R23MP41000,R23MP41500,R23MP42000,R23MP43000,R23MP44000,R23MP45000,).mp4.csmil/master.m3u8',createContentOptionsAAEID('test', 'test', 'test'));
+            }
+            function closepopup() {
+                $('#fancybox').fadeOut('fast');
+                setTimeout("$('#overlay').fadeOut('fast')",200);
+            }
+        </script>
+
     </body>
 </html>

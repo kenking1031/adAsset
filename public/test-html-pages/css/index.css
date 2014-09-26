@@ -1,0 +1,230 @@
+html {
+	font-family : Sans-Serif;
+	font-size : 80%;
+	background : #999999;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration : none;
+}
+
+a:visited
+{
+	color : Blue;
+}
+
+table
+{
+	font-size : 80%;
+	border-collapse : collapse;
+	width :  1200px;
+}
+
+tr
+{
+	vertical-align : top;
+}
+
+td
+{
+	border : 1px solid white;
+	background : #ddddff;
+	padding : 2px 4px;
+}
+
+div.log
+{
+	padding : 2px 4px;
+	min-width: 200px;
+	width: 500px;
+	float: left;
+}
+
+div.noWrap
+{
+	white-space: nowrap;
+}
+
+#flashContent
+{
+}
+
+.view
+{
+	width : 1200px;
+	height: 700px;
+
+	border : 1px dashed red;
+	text-align:center;
+	background: red;
+}
+
+#outer
+{
+	float: left;
+}
+
+.speedBtn
+{
+	background-color: Silver;
+	border : 1px solid black;
+	width: 36px;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-left: 1px;
+	margin-top: -8px;
+}
+
+.bitrateBtn
+{
+	background-color: Silver;
+	border : 1px solid black;
+	width: 36px;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-left: 1px;
+	margin-top: -8px;
+}
+
+.activeBtn
+{
+	background-color: Lime;
+}
+
+#leftLabel
+{
+	display: block;
+	float: left;
+	border: none;
+	margin-right: 4px;
+}
+
+a:focus
+{
+	outline: none;
+}
+
+#playbackRate
+{
+	border: 1px solid black;
+	margin-top: 1px;
+	padding-left: 8px;
+	width: 60px;
+	height: 14px;
+	display: block;
+}
+
+#controls {
+	position: relative;
+	margin: 5px;
+	width: 1276px;
+	height: 60px;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+#controls:hover{opacity:1}
+
+.play,.pause
+{
+	float:left;
+	width:65px;
+}
+
+#controls,.pause,.play,#vol
+{
+	background-image:url(controls.png);
+}
+
+#controls
+{
+	height:25px;
+	background-position:0 0px;
+	border:0;
+	padding:0px 2px;
+	margin:0;
+}
+
+.play{
+	background-position:-0px -25px;
+	width:27px;
+	height:25px;
+	border:0;
+	padding:0;
+	margin:0;
+	display:block
+}
+
+.play:hover
+{
+	background-position:-28px -25px
+}
+
+.pause
+{
+	background-position:-0px -50px;
+	width:27px;
+	height:25px;
+	border:0;
+	padding:0;
+	margin:0;
+	display:block
+}
+
+.pause:hover
+{
+	background-position:-28px -50px
+}
+
+#vol
+{
+	background-position:-0px -75px;
+	width:27px;
+	height:25px;
+	border:0;
+	padding:0;
+	margin:0;
+	display:block
+}
+
+#vol:hover
+{
+	background-position:-28px -75px;
+	width:27px;
+	height:25px;
+	border:0;
+	padding:0;
+	margin:0;
+	display:block
+}
+
+#display,#duration
+{
+	float:left;
+	color:#fff;
+	padding-top:5px;
+	font-size:11px;
+	font-weight:bold
+}
+
+#scrubber
+{
+	cursor:pointer;
+	float:left;
+	margin-top:8px;
+	margin-right:10px;
+	border:0;
+}
+
+#container
+{
+	position:relative
+}

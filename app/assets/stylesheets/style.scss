@@ -51,6 +51,7 @@ button{
     width:495px;
     border:1px solid #232121;
     height:40px;
+    cursor: pointer;
   }
 }
 
@@ -151,6 +152,137 @@ table{
 #keywords thead tr th.headerSortDown span {
   background-image: url('/assets/down-arrow.png');
 }
+
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(119,119,119);
+  z-index: 100;
+  -moz-opacity: 0.7;
+  opacity: .70;
+  filter: alpha(opacity=70);
+  cursor: pointer;
+}
+
+#fancybox {
+  display: none;
+  position: absolute;
+  width: 800px;
+  height: 475px;
+  padding: 0;
+  background-color: black;
+  z-index: 101;
+  overflow: visible;
+  box-shadow: 0 0 50px 10px #333333;
+
+  #controls {
+    position: relative;
+    border: 0;
+    margin: 0;
+    padding:0px 2px;
+    width: 796px;
+    height: 25px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  #controls:hover{opacity:1}
+
+  .play,.pause
+  {
+    float:left;
+    width:65px;
+  }
+
+  #controls,.pause,.play,#vol
+  {
+    background-image:url(/test-html-pages/css/controls.png);
+  }
+
+  .play{
+    background-position:-0px -25px;
+    width:27px;
+    height:25px;
+    border:0;
+    padding:0;
+    margin:0;
+    display:block;
+  }
+
+  .play:hover
+  {
+    background-position:-28px -25px;
+  }
+
+  .pause
+  {
+    background-position:-0px -50px;
+    width:27px;
+    height:25px;
+    border:0;
+    padding:0;
+    margin:0;
+    display:block;
+  }
+
+  .pause:hover
+  {
+    background-position:-28px -50px;
+  }
+
+  #vol
+  {
+    background-position:-0px -75px;
+    width:27px;
+    height:25px;
+    border:0;
+    padding:0;
+    margin:0;
+    display:block;
+  }
+
+  #vol:hover
+  {
+    background-position:-28px -75px;
+    width:27px;
+    height:25px;
+    border:0;
+    padding:0;
+    margin:0;
+    display:block;
+  }
+
+  #display,#duration
+  {
+    float:left;
+    color:#fff;
+    padding-top:5px;
+    font-size:11px;
+    font-weight:bold;
+  }
+
+  #scrubber
+  {
+    cursor:pointer;
+    float:left;
+    margin-top:8px;
+    margin-right:10px;
+    border:0;
+  }
+
+  .log {
+    width:100%;
+    float:left;
+    white-space:nowrap;
+  }
+
+}
+
 #subheader{
   text-align: center;
   width:600px;
