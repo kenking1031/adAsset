@@ -98,9 +98,10 @@ function buildPlayControls() {
 }
 
 //Events have to match the external interface calls in the code check the API
-function onReady() 
+function onReady()
 {
 	log("ON_READY received");
+    document.getElementById('PlayerPlatformAPI').setContentUrl(streamURL,createContentOptionsAAEID('test', 'test', 'test'));
 }
 		
 function onDynamicStreamsChange(bitRateObject)

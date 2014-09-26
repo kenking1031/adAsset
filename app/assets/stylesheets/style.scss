@@ -42,6 +42,9 @@ button{
   background-color: #eaeaea;
   color: green;
 }
+.thumbnail{
+  cursor: pointer;
+}
 .urlFt{
   width:500px;
   height:45px;
@@ -279,6 +282,7 @@ table{
     width:100%;
     float:left;
     white-space:nowrap;
+    display:none;
   }
 
 }

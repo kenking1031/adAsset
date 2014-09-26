@@ -1,5 +1,5 @@
 <div id="header"><%= @message %></div>
-<div id ="subheader">Click on Title or Time to sort</div>
+<div id ="subheader">Click on Title or Time to sort, and click on each thumbnail or URL to play the ad.</div>
 <table id="keywords" class="tablesorter" cellspacing="0" width="100%">
   <thead>
     <tr>
@@ -14,17 +14,18 @@
   <% rowIndex = 0 %>
   <% for video in @data %>
 
+  <% url = video["play_url"] %>
   <% buttonId = "target-to-copy#{rowIndex}" %>
   <% textId = "target-to-copy-text#{rowIndex}" %>
-  <% testerId= "test#{rowIndex}" %>
+  <% testerId = "test#{rowIndex}" %>
 
       <tr>
 
-        <td><img src="<%= video["thumbnail"] %>"></td>
+        <td><img class="thumbnail" src='<%= video["thumbnail"] %>' onClick="body.style.overflow='hidden';firepopup('<%= url %>');"></td>
         <td><%= video["title"] %></td>
-        <td><%= DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
-        <td><div class="urlFt" onClick="body.style.overflow='hidden';firepopup();"><textarea id="<%=textId %>"><%= word_wrap(video["play_url"]) %></textarea></div></td>
-        <td><div class="button_container"><div class="msg_box">Copied</div><div id="<%=buttonId %>" data-clipboard-target="<%= textId %>" class="buttonFt">Click to Copy</div></div></td></td>
+        <td><%= DateTime.parse(video["created_time"]).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
+        <td><div class="urlFt" onClick="body.style.overflow='hidden';firepopup('<%= url %>');"><textarea id="<%= textId %>"><%= word_wrap(url) %></textarea></div></td>
+        <td><div class="button_container"><div class="msg_box">Copied</div><div id="<%= buttonId %>" data-clipboard-target="<%= textId %>" class="buttonFt">Click to Copy</div></div></td></td>
 
       </tr>
 
