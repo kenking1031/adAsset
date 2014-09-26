@@ -10,6 +10,7 @@ gem 'site_config', '>= 0.0.1'
 gem 'httparty'
 gem 'json'
 gem 'spinjs-rails'
+gem "psych"
 
 gem 'jquery-rails'
 #gem 'zeroclipboard-rails', '~> 0.1.0'
