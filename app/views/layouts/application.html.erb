@@ -13,6 +13,7 @@
         <script type="text/javascript" src="/test-html-pages/js/date.format.js"></script>
         <script type="text/javascript" src="/test-html-pages/js/swfobject.js"></script>
         <script type="text/javascript">
+          var streamURL = "";
           var swfVersionStr = "0";
           var xiSwfUrlStr = "";
           var flashvars = {configurationUrl: "http://nh.lab.xcal.tv/pauk/pauk_desktop.xml", deviceId: "TEST_PLAYER_NH" };
@@ -61,13 +62,15 @@
         </div>
 
         <script type="text/javascript">
-            function firepopup() {
+            function firepopup(element) {
+                var e = element;
                 document.getElementById('fancybox').style.left=($(window).width()-800)/2+'px';
                 document.getElementById('fancybox').style.top=($(window).height()-475)/2+$(window).scrollTop()+'px';
                 $('#overlay').fadeIn('fast');
                 setTimeout("$('#fancybox').fadeIn('fast')",200);
+                streamURL = e.firstChild.innerHTML;
                 //setContentURL(streamURL,createContentOptionsAAEID('test', 'test', 'test'));
-                document.getElementById('PlayerPlatformAPI').setContentUrl('http://cilhlsvod-f.akamaihd.net/i/MP4/demo3/2014-09-23/1411488645672_fedbeans_8(8016_,R22MP464,R23MP4350,R23MP4500,R23MP41000,R23MP41500,R23MP42000,R23MP43000,R23MP44000,R23MP45000,).mp4.csmil/master.m3u8',createContentOptionsAAEID('test', 'test', 'test'));
+                //document.getElementById('PlayerPlatformAPI').setContentUrl('http://cilhlsvod-f.akamaihd.net/i/MP4/demo3/2014-09-23/1411488645672_fedbeans_8(8016_,R22MP464,R23MP4350,R23MP4500,R23MP41000,R23MP41500,R23MP42000,R23MP43000,R23MP44000,R23MP45000,).mp4.csmil/master.m3u8',createContentOptionsAAEID('test', 'test', 'test'));
             }
             function closepopup() {
                 $('#fancybox').fadeOut('fast');

@@ -23,7 +23,7 @@
         <td><img src="<%= video["thumbnail"] %>"></td>
         <td><%= video["title"] %></td>
         <td><%= DateTime.parse(video['created_time']).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
-        <td><div class="urlFt" onClick="body.style.overflow='hidden';firepopup();"><textarea id="<%=textId %>"><%= word_wrap(video["play_url"]) %></textarea></div></td>
+        <td><div class="urlFt" onClick="body.style.overflow='hidden';firepopup(this);"><textarea id="<%=textId %>"><%= word_wrap(video["play_url"]) %></textarea></div></td>
         <td><div class="button_container"><div class="msg_box">Copied</div><div id="<%=buttonId %>" data-clipboard-target="<%= textId %>" class="buttonFt">Click to Copy</div></div></td></td>
 
       </tr>
