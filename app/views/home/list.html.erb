@@ -1,0 +1,185 @@
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+<div ng-app = "adAssets">
+
+  <div ng-app="" ng-controller="assetsController">
+
+    <table id="keywords" class="tablesorter" cellspacing="0" width="100%">
+      <thead>
+      <tr>
+        <th><span>Thumbnail</span></th>
+        <th class="bi-direction"><span>Title</span></th>
+        <th class="bi-direction-1"><span>Time</span></th>
+        <th><span>URL</span></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr np-repeat="asset in assets">
+
+        <td><img class="thumbnail" src='{{asset.thumbnail}}' onClick="body.style.overflow='hidden';firepopup('{{asset.play_url}}');"></td>
+        <td>{{asset.title}}</td>
+        <td><%= DateTime.parse('{{ asset.created_time }}').to_time.strftime("%m/%d/%y %I:%M %p") %></td>
+        <td><div class="urlFt" onClick="body.style.overflow='hidden';firepopup('{{asset.play_url}}');"><textarea id="target-to-copy">{{asset.play_url}}</textarea></div></td>
+        <td><div class="button_container"><div class="msg_box">Copied</div><div data-clipboard-target="target-to-copy-text" class="buttonFt">Click to Copy</div></div></td></td>
+
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+
+<script>
+
+    function assetsController($scope,$http) {
+        $http.get("channels/assets/3")
+        .success(function(response) {$scope.assets = response.assets;});
+    }
+
+</script>
+
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function()
+
+    {
+
+        var clientTarget = new ZeroClipboard($('.buttonFt'),{
+            moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
+            debug: false
+        } );
+
+        clientTarget.on( "load", function(clientTarget)
+        {
+            $('#flash-loaded').fadeIn();
+
+            clientTarget.on( "dataRequested", function(clientTarget, args) {
+                clientTarget.setText( args.text );
+                $(this).css('backgroundColor','#ccc');
+                $(this).parent().find('.msg_box').fadeIn();
+                _self = $(this);
+                setTimeout(function(){_self.parent().find('.msg_box').fadeOut();},1500);
+            } );
+        } );
+
+    });
+
+
+    $(function(){
+        $('#keywords').tablesorter( {
+            headers: {
+
+                0: {
+
+                    sorter: false
+                },
+
+                3: {
+
+                    sorter: false
+                },
+                4: {
+
+                    sorter: false
+                }
+            }
+        });
+    });
+
+</script>
+
+
+<div id="header"><%= @message %></div>
+<div id ="subheader">Click on Title or Time to sort, and click on each thumbnail or URL to play the ad.</div>
+<table id="keywords" class="tablesorter" cellspacing="0" width="100%">
+  <thead>
+  <tr>
+    <th><span>Thumbnail</span></th>
+    <th class="bi-direction"><span>Title</span></th>
+    <th class="bi-direction-1"><span>Time</span></th>
+    <th><span>URL</span></th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% rowIndex = 0 %>
+  <% for video in @data %>
+
+      <% url = video["play_url"] %>
+      <% buttonId = "target-to-copy#{rowIndex}" %>
+      <% textId = "target-to-copy-text#{rowIndex}" %>
+      <% testerId = "test#{rowIndex}" %>
+
+      <tr>
+
+        <td><img class="thumbnail" src='<%= video["thumbnail"] %>' onClick="body.style.overflow='hidden';firepopup('<%= url %>');"></td>
+        <td><%= video["title"] %></td>
+        <td><%= DateTime.parse(video["created_time"]).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
+        <td><div class="urlFt" onClick="body.style.overflow='hidden';firepopup('<%= url %>');"><textarea id="<%= textId %>"><%= word_wrap(url) %></textarea></div></td>
+        <td><div class="button_container"><div class="msg_box">Copied</div><div id="<%= buttonId %>" data-clipboard-target="<%= textId %>" class="buttonFt">Click to Copy</div></div></td></td>
+
+      </tr>
+
+      <% rowIndex+=1 %>
+  <% end %>
+
+  </tbody>
+</table>
+
+<script type="text/javascript">
+
+
+    $(document).ready(function()
+
+    {
+
+        var clientTarget = new ZeroClipboard($('.buttonFt'),{
+            moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
+            debug: false
+        } );
+
+        clientTarget.on( "load", function(clientTarget)
+        {
+            $('#flash-loaded').fadeIn();
+
+            clientTarget.on( "dataRequested", function(clientTarget, args) {
+                clientTarget.setText( args.text );
+                $(this).css('backgroundColor','#ccc');
+                $(this).parent().find('.msg_box').fadeIn();
+                _self = $(this);
+                setTimeout(function(){_self.parent().find('.msg_box').fadeOut();},1500);
+            } );
+        } );
+
+    });
+
+
+    $(function(){
+        $('#keywords').tablesorter( {
+            headers: {
+
+                0: {
+
+                    sorter: false
+                },
+
+                3: {
+
+                    sorter: false
+                },
+                4: {
+
+                    sorter: false
+                }
+            }
+        });
+    });
+
+</script>

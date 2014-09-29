@@ -1,43 +1,90 @@
-<div id="header"><%= @message %></div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-resource.min.js"></script>
+
+<div ng-app="" ng-controller="assetsController">
+<div id="header">{{message}}</div>
 <div id ="subheader">Click on Title or Time to sort, and click on each thumbnail or URL to play the ad.</div>
-<table id="keywords" class="tablesorter" cellspacing="0" width="100%">
+<table id="keywords" cellspacing="0" width="100%">
   <thead>
-    <tr>
-      <th><span>Thumbnail</span></th>
-      <th class="bi-direction"><span>Title</span></th>
-      <th class="bi-direction-1"><span>Time</span></th>
-      <th><span>URL</span></th>
-      <th></th>
-    </tr>
+      <tr>
+        <th><span>Thumbnail</span></th>
+        <th ng-class="{false:'up-direction', true:'down-direction', '':'bi-direction'}[direction]" ng-click="changeSorting('title'); changeClass('title')" ><span>Title</span></th>
+        <th ng-click="changeSorting('created_time');changeClass('time')"><span>Time</span></th>
+        <th><span>URL</span></th>
+        <th></th>
+      </tr>
   </thead>
   <tbody>
-  <% rowIndex = 0 %>
-  <% for video in @data %>
-
-  <% url = video["play_url"] %>
-  <% buttonId = "target-to-copy#{rowIndex}" %>
-  <% textId = "target-to-copy-text#{rowIndex}" %>
-  <% testerId = "test#{rowIndex}" %>
-
-      <tr>
-
-        <td><img class="thumbnail" src='<%= video["thumbnail"] %>' onClick="body.style.overflow='hidden';firepopup('<%= url %>');"></td>
-        <td><%= video["title"] %></td>
-        <td><%= DateTime.parse(video["created_time"]).to_time.strftime("%m/%d/%y %I:%M %p") %></td>
-        <td><div class="urlFt" onClick="body.style.overflow='hidden';firepopup('<%= url %>');"><textarea id="<%= textId %>"><%= word_wrap(url) %></textarea></div></td>
-        <td><div class="button_container"><div class="msg_box">Copied</div><div id="<%= buttonId %>" data-clipboard-target="<%= textId %>" class="buttonFt">Click to Copy</div></div></td></td>
-
+      <tr ng-repeat="asset in assets | orderBy:sort.column:sort.descending">
+        <td>
+          <img class="thumbnail" src='{{asset.thumbnail}}' onClick="body.style.overflow='hidden';firepopup('{{asset.play_url}}');">
+        </td>
+        <td>{{asset.title}}</td>
+        <td>{{asset.created_time }}</td>
+        <td>
+          <div class="urlFt" onClick="body.style.overflow='hidden'">
+            <textarea id="target-to-copy" onClick="body.style.overflow='hidden';firepopup('{{asset.play_url}}');">{{asset.play_url}}</textarea>
+          </div>
+        </td>
+        <td>
+          <div class="button_container">
+            <div class="msg_box">
+              Copied
+            </div>
+            <div data-clipboard-target="target-to-copy-text" class="buttonFt">
+              Click to Copy
+            </div>
+          </div>
+        </td>
       </tr>
-
-      <% rowIndex+=1 %>
-  <% end %>
-
   </tbody>
 </table>
+</div>
+
+
+
+<script>
+    function assetsController($scope,$http) {
+        $http({method: 'GET', url: '/api/channels/assets/3'}).
+                success(function(data, status, headers, config) {
+                    $scope.assets = data.assets;
+                    $scope.message = data.message;
+                    $scope.total_assets = data.total_assets;
+                    $scope.sort = {
+                        column: '',
+                        descending: false
+                    };
+                    $scope.changeSorting = function(column) {
+                    $scope.direction = false;
+
+                        var sort = $scope.sort;
+
+                        if (sort.column == column) {
+                            sort.descending = !sort.descending;
+                            $scope.direction = !$scope.direction;
+                        } else {
+                            sort.column = column;
+                            sort.descending = false;
+                            $scope.direction = false;
+                        }
+
+                        console.log($scope.class);
+                    };
+
+
+                    console.log($scope.assets);
+                }).
+                error(function(data, status, headers, config) {
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+                    console.log('test failed');
+                });
+    }
+</script>
+
+
 
 <script type="text/javascript">
-
-
     $(document).ready(function()
 
     {
@@ -61,29 +108,11 @@
         } );
 
     });
-
-
-    $(function(){
-        $('#keywords').tablesorter( {
-                headers: {
-
-            0: {
-
-                sorter: false
-            },
-
-            3: {
-
-                sorter: false
-            },
-            4: {
-
-                sorter: false
-            }
-        }
-        });
-    });
-
 </script>
 
-<body>
+
+
+
+
+
+

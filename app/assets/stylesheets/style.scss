@@ -133,6 +133,18 @@ table{
   .bi-direction-1{
     background: url('/assets/bi-direction.png') no-repeat 100px 10px;
   }
+
+  .up-direction{
+
+    background: url('/assets/up-arrow.png') no-repeat 130px 15px;
+
+  }
+
+  .down-direction{
+
+    background: url('/assets/down-arrow.png') no-repeat 130px 15px;
+
+  }
 }
 #keywords thead tr th {
   font-weight: bold;
