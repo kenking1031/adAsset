@@ -36,7 +36,7 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn'
+gem 'puma'
 
 # Deploy with Capistrano
 # gem 'capistrano'

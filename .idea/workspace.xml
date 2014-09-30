@@ -198,7 +198,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="17" selection-start="437" selection-end="437" vertical-scroll-proportion="0.40609136">
+            <state line="23" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.5837563">
               <folding />
             </state>
           </provider>
@@ -608,21 +608,6 @@
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
-      <recent name="$PROJECT_DIR$/app/assets/images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app/assets" />
-    </key>
-  </component>
   <component name="RunManager" selected="Rails.Development: AdAssets">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
@@ -972,7 +957,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="437" selection-end="437" vertical-scroll-proportion="0.40609136">
+        <state line="23" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.5837563">
           <folding />
         </state>
       </provider>
