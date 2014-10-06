@@ -4,7 +4,7 @@
     <list default="true" id="0f41a48a-0752-4093-b40b-2edfd90296a3" name="Default" comment="" />
     <ignored path="AdAssets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412559865058" ignored="false" />
+    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412560891589" ignored="false" />
     <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412379138956" ignored="false" />
     <file path="/application_helper.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411432747209" ignored="false" />
     <file path="/application.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411433930453" ignored="false" />
@@ -161,7 +161,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="57" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.62780267">
+            <state line="86" column="40" selection-start="3825" selection-end="3825" vertical-scroll-proportion="-0.30044842">
               <folding />
             </state>
           </provider>
@@ -976,7 +976,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="57" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.62780267">
+        <state line="86" column="40" selection-start="3825" selection-end="3825" vertical-scroll-proportion="-0.30044842">
           <folding />
         </state>
       </provider>
