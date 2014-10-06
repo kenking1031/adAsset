@@ -2,14 +2,75 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-resource.min.js"></script>
 
 <div ng-app="" ng-controller="assetsController">
+
+  <script>
+
+
+      function assetsController($scope,$http) {
+          angular.element(document).ready(
+                  $http({method: 'GET', url: '/api/channels/assets/3'}).
+                          success(function(data, status, headers, config) {
+                              $scope.assets = data.assets;
+                              $scope.message = data.message;
+                              $scope.total_assets = data.total_assets;
+                              $scope.sort = {
+                                  column: '',
+                                  descending: ''
+                              };
+                              $scope.changeSorting = function(column) {
+//                                  $scope.direction = false;
+
+                                  var sort = $scope.sort;
+
+                                  if (sort.column == column) {
+                                      sort.descending = !sort.descending;
+
+                                      if(column=='title'){
+                                          $scope.directionTitle = !$scope.directionTitle;
+
+                                      }   else{
+                                          $scope.directionTime = !$scope.directionTime;
+                                      }
+
+
+                                  } else {
+                                      if(column == 'title'){
+                                          sort.column = column;
+                                          sort.descending = false;
+                                          $scope.directionTitle = true;
+                                          $scope.directionTime = '';
+
+                                      }else{
+                                          sort.column = column;
+                                          sort.descending = false;
+                                          $scope.directionTime = true;
+                                          $scope.directionTitle = '';
+
+                                      }
+
+                                  }
+
+
+                              };
+
+                          }).error(function(data, status, headers, config) {
+                              // called asynchronously if an error occurs
+                              // or server returns response with an error status.
+                              console.log('test failed');
+                          })
+          )
+      }
+  </script>
+
+
 <div id="header">{{message}}</div>
 <div id ="subheader">Click on Title or Time to sort, and click on each thumbnail or URL to play the ad.</div>
 <table id="keywords" cellspacing="0" width="100%">
   <thead>
       <tr>
         <th><span>Thumbnail</span></th>
-        <th ng-class="{false:'up-direction', true:'down-direction', '':'bi-direction'}[direction]" ng-click="changeSorting('title'); changeClass('title')" ><span>Title</span></th>
-        <th ng-click="changeSorting('created_time');changeClass('time')"><span>Time</span></th>
+        <th  class="bi-direction" ng-class="{true:'up-direction', false:'down-direction'}[directionTitle]" ng-click="changeSorting('title')" id="sortable"><span>Title</span></th>
+        <th  class="bi-direction" ng-class="{true:'up-direction', false:'down-direction'}[directionTime]" ng-click="changeSorting('created_time')" id="sortable"><span>Time</span></th>
         <th><span>URL</span></th>
         <th></th>
       </tr>
@@ -41,50 +102,9 @@
 </table>
 </div>
 
-
-
-<script>
-    function assetsController($scope,$http) {
-        $http({method: 'GET', url: '/api/channels/assets/3'}).
-                success(function(data, status, headers, config) {
-                    $scope.assets = data.assets;
-                    $scope.message = data.message;
-                    $scope.total_assets = data.total_assets;
-                    $scope.sort = {
-                        column: '',
-                        descending: false
-                    };
-                    $scope.changeSorting = function(column) {
-                    $scope.direction = false;
-
-                        var sort = $scope.sort;
-
-                        if (sort.column == column) {
-                            sort.descending = !sort.descending;
-                            $scope.direction = !$scope.direction;
-                        } else {
-                            sort.column = column;
-                            sort.descending = false;
-                            $scope.direction = false;
-                        }
-
-                        console.log($scope.class);
-                    };
-
-
-                    console.log($scope.assets);
-                }).
-                error(function(data, status, headers, config) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
-                    console.log('test failed');
-                });
-    }
-</script>
-
-
-
 <script type="text/javascript">
+
+
     $(document).ready(function()
 
     {

@@ -4,8 +4,8 @@
     <list default="true" id="0f41a48a-0752-4093-b40b-2edfd90296a3" name="Default" comment="" />
     <ignored path="AdAssets.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411793153899" ignored="false" />
-    <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411784392803" ignored="false" />
+    <file path="/index.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412559865058" ignored="false" />
+    <file path="/style.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412379138956" ignored="false" />
     <file path="/application_helper.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411432747209" ignored="false" />
     <file path="/application.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411433930453" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-triggers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
@@ -30,7 +30,7 @@
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-option-sort-key.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-parsers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/javascripts/tablesorter/docs/example-option-sort-force.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411497995167" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/emailer.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590690792" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/emailer.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412227674757" ignored="false" />
     <file path="/application.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411499595898" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-triggers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-meta-parsers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
@@ -54,50 +54,88 @@
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-option-sort-key.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-parsers.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
     <file path="$PROJECT_DIR$/config/tablesorter/docs/example-option-sort-force.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411498036251" ignored="false" />
-    <file path="/*.regexp" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412113727128" ignored="false" />
+    <file path="/*.regexp" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412194510939" ignored="false" />
     <file path="/Gemfile" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411518736837" ignored="false" />
     <file path="/home_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411769078826" ignored="false" />
     <file path="/Dummy.txt" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411605212067" ignored="false" />
     <file path="/test.html" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411573158527" ignored="false" />
     <file path="$PROJECT_DIR$/../../GoldenGate/app/models/asset.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590727847" ignored="false" />
     <file path="/asset.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590726917" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/playback_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/application_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412112941316" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/playback_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/application_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
     <file path="/application_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411590410446" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/footer_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/genres_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/publishers_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/config/settings.yml" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412112628829" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/subscriptions_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/javascripts/player.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/user.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412113293025" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/templates/videos-show.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/featured_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/finder.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412113028361" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/footer_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/genres_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/publishers_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/config/settings.yml" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412185019066" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/subscriptions_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/javascripts/player.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/user.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/templates/videos-show.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/featured_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/finder.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
     <file path="/application.css" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411602348742" ignored="false" />
     <file path="/application.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411669659398" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/public/multimedia/config/pauk_desktop.xml" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/public/multimedia/config/pauk_desktop.xml" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
     <file path="/videos-show.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412028906735" ignored="false" />
     <file path="/routes.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411767119331" ignored="false" />
     <file path="/list.html.erb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1411761786725" ignored="false" />
-    <file path="/finder.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412037854034" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/subscriptions_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/channels_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
+    <file path="/finder.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412194762105" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/subscriptions_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/channels_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
     <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/javascripts/backbone/views/common/store_list_row_featured.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412012493547" ignored="false" />
     <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/stylesheets/player.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/channels_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/stylesheets/video.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/channels_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/stylesheets/video.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
     <file path="/video.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412016917731" ignored="false" />
     <file path="/player.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412029683916" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/channel.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412115214330" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/templates/_users_header2.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/channel.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412185019066" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/templates/_users_header2.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412226901385" ignored="false" />
     <file path="$PROJECT_DIR$/../../GoldenGate/config/initializers/version.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
     <file path="$PROJECT_DIR$/../../GoldenGate/config/initializers/new_relic.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/Gemfile" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412031783739" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/subscription_status.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412115214330" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GoldenGate/log/development.log" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412115214330" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/Gemfile" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412291027725" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/subscription_status.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412185019066" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/log/development.log" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412194832907" ignored="false" />
     <file path="/subscription_status.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412114522653" ignored="false" />
     <file path="/.gitignore" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412121454968" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/upnext_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/sessions_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/response_node.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/user_response_node.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="/user_response_node.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412187266869" ignored="false" />
+    <file path="/response_node.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412187396302" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/javascripts/backbone/views/common/store_list.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="/store_list.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412194111555" ignored="false" />
+    <file path="/user.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296182182" ignored="false" />
+    <file path="/emailer.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412206296211" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/templates/contact.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="/contact.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412227282352" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/javascripts/userAgent.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412223742261" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/javascripts/application.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="/userAgent.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412220756991" ignored="false" />
+    <file path="/_users_header2.liquid" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412226900794" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/stylesheets/register-user.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="/register-user.scss" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412227262695" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412285682161" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/config/routes.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/models/search.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412291027725" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/config/application.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412291027725" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/users_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/shows_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/videos_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/videos_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/publishers_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/channels_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/search_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/bundles_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/videos_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/assets/javascripts/utils.js" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/search_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/user/genres_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/api/errors_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/lib/mid_tier_auth.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/app/controllers/genres_controller.rb" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GoldenGate/config/locales/en_US.yml" changelist="0f41a48a-0752-4093-b40b-2edfd90296a3" time="1412296572986" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,10 +158,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="44" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.0">
+            <state line="51" column="57" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.62780267">
               <folding />
             </state>
           </provider>
@@ -150,7 +188,7 @@
       <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="63" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
+            <state line="153" column="97" selection-start="2594" selection-end="2594" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,15 +215,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="channels_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/api/channels_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="finder.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/finder.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -195,10 +224,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.5837563">
+            <state line="23" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -227,9 +256,9 @@
         <option value="$PROJECT_DIR$/app/views/home/list.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/api/channels_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/finder.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
       </list>
     </option>
   </component>
@@ -270,7 +299,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -597,14 +625,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/GoldenGate_BackUps/0621/GoldenGate" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
@@ -770,15 +799,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21018651" sideWeight="0.7781818" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22181818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24175036" sideWeight="0.9175758" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.082424246" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -856,18 +885,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="44" selection-start="269" selection-end="269" vertical-scroll-proportion="0.097911224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -886,23 +906,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/channel_response_node.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="18" selection-start="418" selection-end="430" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="30" column="18" selection-start="418" selection-end="430" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/channels_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/routing_error.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/list.html.erb">
@@ -927,16 +946,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/finder.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="44" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.0">
+        <state line="91" column="0" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="63" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
+        <state line="23" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -948,16 +967,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/finder.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0">
+        <state line="153" column="97" selection-start="2594" selection-end="2594" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.5837563">
+        <state line="51" column="57" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.62780267">
           <folding />
         </state>
       </provider>

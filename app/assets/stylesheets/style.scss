@@ -146,10 +146,11 @@ table{
 
   }
 }
-#keywords thead tr th {
+#keywords thead tr th#sortable {
   font-weight: bold;
   padding: 12px 30px;
   padding-left: 42px;
+  //background: url('/assets/bi-direction.png') no-repeat 130px 10px;
 }
 #keywords thead tr th span {
   padding-right: 20px;
