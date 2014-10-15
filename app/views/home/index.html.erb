@@ -1,68 +1,5 @@
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-resource.min.js"></script>
 
 <div ng-app="" ng-controller="assetsController">
-
-  <script>
-
-
-      function assetsController($scope,$http) {
-          angular.element(document).ready(
-                  $http({method: 'GET', url: '/api/channels/assets/3'}).
-                          success(function(data, status, headers, config) {
-                              $scope.assets = data.assets;
-                              $scope.message = data.message;
-                              $scope.total_assets = data.total_assets;
-                              $scope.sort = {
-                                  column: '',
-                                  descending: ''
-                              };
-                              $scope.changeSorting = function(column) {
-//                                  $scope.direction = false;
-
-                                  var sort = $scope.sort;
-
-                                  if (sort.column == column) {
-                                      sort.descending = !sort.descending;
-
-                                      if(column=='title'){
-                                          $scope.directionTitle = !$scope.directionTitle;
-
-                                      }   else{
-                                          $scope.directionTime = !$scope.directionTime;
-                                      }
-
-
-                                  } else {
-                                      if(column == 'title'){
-                                          sort.column = column;
-                                          sort.descending = false;
-                                          $scope.directionTitle = true;
-                                          $scope.directionTime = '';
-
-                                      }else{
-                                          sort.column = column;
-                                          sort.descending = false;
-                                          $scope.directionTime = true;
-                                          $scope.directionTitle = '';
-
-                                      }
-
-                                  }
-
-
-                              };
-
-                          }).error(function(data, status, headers, config) {
-                              // called asynchronously if an error occurs
-                              // or server returns response with an error status.
-                              console.log('test failed');
-                          })
-          )
-      }
-  </script>
-
-
 <div id="header">{{message}}</div>
 <div id ="subheader">Click on Title or Time to sort, and click on each thumbnail or URL to play the ad.</div>
 <table id="keywords" cellspacing="0" width="100%">
@@ -78,13 +15,13 @@
   <tbody>
       <tr ng-repeat="asset in assets | orderBy:sort.column:sort.descending">
         <td>
-          <img class="thumbnail" src='{{asset.thumbnail}}' onClick="body.style.overflow='hidden';firepopup('{{asset.play_url}}');">
+          <img class="thumbnail" src='{{asset.thumbnail}}' ng-click="firePopup(asset.play_url)">
         </td>
         <td>{{asset.title}}</td>
         <td>{{asset.created_time }}</td>
         <td>
           <div class="urlFt" onClick="body.style.overflow='hidden'">
-            <textarea id="target-to-copy" onClick="body.style.overflow='hidden';firepopup('{{asset.play_url}}');">{{asset.play_url}}</textarea>
+            <textarea id="target-to-copy" ng-click="firePopup(asset.play_url)">{{asset.play_url}}</textarea>
           </div>
         </td>
         <td>
@@ -101,6 +38,113 @@
   </tbody>
 </table>
 </div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-resource.min.js"></script>
+
+
+<script>
+    function assetsController($scope,$http) {
+
+//        $scope.$storage = $localStorage.$default({
+//            data: JSON.stringify({'assets':[]})
+//         });
+
+        $scope.handelData = function(data){
+
+            $scope.assets = data.assets;
+            $scope.message = data.message;
+            $scope.total_assets = data.total_assets;
+            $scope.sort = {
+                column: '',
+                descending: ''
+            };
+            $scope.changeSorting = function(column) {
+//                                  $scope.direction = false;
+
+                var sort = $scope.sort;
+
+                if (sort.column == column) {
+                    sort.descending = !sort.descending;
+
+                    if(column=='title'){
+                        $scope.directionTitle = !$scope.directionTitle;
+
+                    }   else{
+                        $scope.directionTime = !$scope.directionTime;
+                    }
+
+
+                } else {
+                    if(column == 'title'){
+                        sort.column = column;
+                        sort.descending = false;
+                        $scope.directionTitle = true;
+                        $scope.directionTime = '';
+
+                    }else{
+                        sort.column = column;
+                        sort.descending = false;
+                        $scope.directionTime = true;
+                        $scope.directionTitle = '';
+
+                    }
+
+                }
+
+
+            };
+
+            $scope.firePopup = function(url){
+
+                $('body').css('overflow','hidden');
+
+                $('#fancybox').css({'left':($(window).width()-800)/2,'top': ($(window).height()-475)/2+$(window).scrollTop()});
+
+                $('#overlay').fadeIn('fast');
+
+//                                setTimeout("$('#fancybox').fadeIn('fast')",200);
+                $scope.layerOut('#fancybox',200);
+                streamURL = url;
+            } ;
+
+
+            $scope.closePopup = function(){
+
+                $('#fancybox').fadeOut('fast');
+//                                setTimeout("$('#overlay').fadeOut('fast')",200);
+                $scope.layerOut('#overlay',200);
+            }
+
+            $scope.layerOut = function(layerId,timePeriod){
+                var performFunction = function(){
+                    $(layerId).fadeOut('fast');
+                };
+
+                setTimeout( performFunction(), timePeriod );
+            }
+
+        };
+
+        angular.element(document).ready(
+                $http({method: 'GET', url: '/api/channels/assets/3'}).
+                        success(function(data, status, headers, config) {
+
+//                            $storage.data = data;
+
+                            $scope.handelData(data);
+                        }).error(function(data, status, headers, config) {
+                            // called asynchronously if an error occurs
+                            // or server returns response with an error status.
+//                            $scope.handelData($storage.data) ;
+
+                            console.log('test failed');
+                        })
+        )
+
+    }
+</script>
 
 <script type="text/javascript">
 
