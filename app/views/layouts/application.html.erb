@@ -4,40 +4,11 @@
         <meta charset="utf-8">
         <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
         <link href='/assets/style.scss' rel='stylesheet' type='text/css'>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-        <script src="http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.js"></script>
-        <script src="/assets/jquery.tablesorter.js"></script>
-
-        <!--script type="text/javascript" src="/test-html-pages/js/jquery-1.4.2.min.js"></script-->
-        <script type="text/javascript" src="/test-html-pages/js/playerControls.js"></script>
-        <script type="text/javascript" src="/test-html-pages/js/date.format.js"></script>
-        <script type="text/javascript" src="/test-html-pages/js/swfobject.js"></script>
-        <script type="text/javascript">
-          var streamURL = "";
-          var swfVersionStr = "0";
-          var xiSwfUrlStr = "";
-          var flashvars = {configurationUrl: "http://nh.lab.xcal.tv/pauk/pauk_desktop.xml", deviceId: "TEST_PLAYER_NH" };
-          var params = {};
-          params.quality = "high";
-          params.bgcolor = "#000000";
-          params.allowscriptaccess = "always";
-          params.allowfullscreen = "true";
-          params.wmode = "direct";
-          var attributes = {};
-          attributes.id = "PlayerPlatformAPI";
-          attributes.name = "PlayerPlatformAPI";
-          attributes.align = "middle";
-          swfobject.embedSWF(
-                  "/test-html-pages/PlayerPlatformAPI.swf", "flashContent",
-                  "800", "450",
-                  swfVersionStr, xiSwfUrlStr,
-                  flashvars, params, attributes);
-        </script>
-
+        <%= javascript_include_tag "application" %>
+        <script src="/assets/loadPlayer.js"></script>
     </head>
 
     <body class="home">
-
         <a href="/">
           <img id="logo" src="/assets/watchable.svg" onerror="this.src='/assets/watchable.png'" />
         </a>
@@ -47,21 +18,5 @@
             <%= yield %>
           </div>
         </div>
-
-        <div id="overlay" onClick="body.style.overflow='auto';closepopup();">
-        </div>
-        <div id="fancybox">
-          <div id="flashContent"></div>
-          <div id="controls">
-            <div id="playpause"><button class="play"></button></div>
-            <canvas id="scrubber" height="8"></canvas>
-            <span id="display"></span>
-            <span id="duration"></span>
-            <div id="log" class="log">Log</div>
-          </div>
-        </div>
-
-
-
     </body>
 </html>

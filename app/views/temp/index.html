@@ -60,13 +60,13 @@
                 <tbody>
                 <tr ng-repeat="asset in assets | orderBy:sort.column:sort.descending">
                     <td>
-                        <img class="thumbnail" src='{{asset.thumbnail}}' ng-click="firePopup(asset.play_url)">
+                        <img class="thumbnail" src='{{asset.thumbnail}}' ng-click="firePopup({{asset.play_url}})">
                     </td>
                     <td>{{asset.title}}</td>
                     <td>{{asset.created_time }}</td>
                     <td>
                         <div class="urlFt" onClick="body.style.overflow='hidden'">
-                            <textarea id="target-to-copy" ng-click="firePopup(asset.play_url)">{{asset.play_url}}</textarea>
+                            <textarea id="target-to-copy" ng-click="firePopup({{asset.play_url}})">{{asset.play_url}}</textarea>
                         </div>
                     </td>
                     <td>
