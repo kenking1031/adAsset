@@ -21,6 +21,8 @@ $(document).ready(function()
                 {
                     $('#flash-loaded').fadeIn();
 
+                    console.log('flash loaded');
+
                     clientTarget.on( "dataRequested", function(clientTarget, args) {
                         clientTarget.setText( args.text );
                         $(this).css('backgroundColor','#ccc');

@@ -3,10 +3,11 @@ class Api::ChannelsController < ApplicationController
   def assets
 
     size = params[:size].to_i
+    pageNum = params[:pageNum].to_i || 1
 
     @message = "Watchable Ad Assets"
 
-    channel_videos_response = Finder.find($MidTierToken, nil, nil, nil, "channels", nil, nil, nil, nil, size, nil, "/api/web/admin/search/channels/#{SiteConfig.CHANNEL_ID}/videos")
+    channel_videos_response = Finder.find($MidTierToken, nil, nil, nil, "channels", nil, nil, nil, nil, size, nil, "/api/web/admin/search/channels/#{SiteConfig.CHANNEL_ID}/videos?pageNum=#{pageNum}&pageSize=#{size}")
 
     @channel_videos =channel_videos_response[0]
 

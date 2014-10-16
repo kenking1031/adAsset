@@ -5,6 +5,8 @@ class Finder
   def self.find(token,id= nil,bear_token= nil,cookie=nil, source_type= nil, item_type= nil,second_id= nil, second_item_type= nil, pageNum= nil, pageSize= nil, isLogged= nil, api_path= nil)
 
     resource_path = resource_path(id,source_type,item_type,second_id, second_item_type, pageNum, pageSize, api_path)
+
+    Rails.logger.info "Resource_path : #{resource_path}"
     options = options(token, bear_token, cookie)
 
     begin

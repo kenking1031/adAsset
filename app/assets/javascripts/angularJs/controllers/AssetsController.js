@@ -12,7 +12,7 @@ adAssetModule.controller('assetsController', ['$scope', 'dataFactory',
         getAssets();
 
         function getAssets(){
-            if(localStorage['data']){
+            if(localStorage['dataTest']){
 
                 var data= JSON.parse(localStorage['data']);
                 $scope.assets = data.assets;

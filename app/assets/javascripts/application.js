@@ -10,8 +10,9 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 
-//= require loadPlayer.js
+
 //= require jquery
+//= require ZeroClipboard.js
 //= require ./angularJs/angular.min.js
 //= require ./angularJs/angular-resource.min.js
 //= require ./angularJs/angular-route.js
