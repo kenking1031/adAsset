@@ -1,0 +1,80 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+<style type="text/css">
+	*{
+ 	 box-sizing:border-box;
+	 }
+	body{
+		  width:70%;
+		  margin:10px auto;
+		  background:steelblue;
+	}
+	div.copy{
+		  float:left;
+		  width:50%;
+		  padding:10px;
+	}
+	div.paste{
+		  float:right;
+		  width:50%;
+		  padding:10px;
+	}
+
+	h1{
+	  color:white;
+	}
+
+	.clearfix::after {
+	   content: "";
+	   display:table;
+	   clear:both;
+	}
+
+	button.btn{
+	  background:white;
+	  color:steelblue;
+	  border:0;
+	  padding: 8px 20px;
+	  cursor:pointer;
+	  font-weight: bold;
+	}
+
+	
+</style>
+ <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+ <script src="http://asafdav.github.io/ng-csv/javascripts/ngClip.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/1.1.7/ZeroClipboard.min.js"></script>
+ </head>
+ <body>
+ <script>
+var copyApp = angular.module('clip', ['ngClipboard']);
+copyApp.controller("Main", function($scope){
+	$scope.text = "Copy the text here."   //set the default text
+	$scope.copied = false;				  //message display control
+	
+    $scope.getTextToCopy = function() {
+        return $scope.text;				 //copy the text to clipboard
+    };
+    $scope.displayMes = function () {
+        $scope.copied = true;
+    };
+});
+
+</script>
+
+<html>
+<body ng-app="clip" ng-controller="Main" class="clearfix">
+<div class="copy">
+	<h1> Copy test </h1>
+	<textarea rows="10" cols="50" ng-model="text"></textarea><br/>
+	<button class="btn" clip-copy="getTextToCopy()" clip-click="displayMes()">Copy</button>
+</div>
+<div class="paste">
+	<h1>Paste your text here.</h1>
+	<textarea rows="10" cols="50"  ng-paste="paste=true"></textarea>
+	<p ng-show="copied">Text get copied. Now you can try to paste it here.</p>
+</div>
+</body>
+</html>
