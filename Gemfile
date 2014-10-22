@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+source 'http://vimond:gems@gems.vimond.com/'
+
 
 gem 'rails', '3.2.19'
 
@@ -43,3 +45,5 @@ gem 'puma'
 
 # To use debugger
 # gem 'debugger'
+
+ruby '2.0.0'

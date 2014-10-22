@@ -7,31 +7,31 @@
  */
 
 
-$(document).ready(function()
-
-    {
-
-        var clientTarget = new ZeroClipboard($('.buttonFt'),{
-            moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
-            debug: false
-            }
-        );
-
-        clientTarget.on( "load", function(clientTarget)
-                {
-                    $('#flash-loaded').fadeIn();
-
-                    console.log('flash loaded');
-
-                    clientTarget.on( "dataRequested", function(clientTarget, args) {
-                        clientTarget.setText( args.text );
-                        $(this).css('backgroundColor','#ccc');
-                        $(this).parent().find('.msg_box').fadeIn();
-                        _self = $(this);
-                        setTimeout(function(){_self.parent().find('.msg_box').fadeOut();},1500);
-                    } );
-                }
-        );
-
-    });
+//$(document).ready(function()
+//
+//    {
+//
+//        var clientTarget = new ZeroClipboard($('.buttonFt'),{
+//            moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
+//            debug: false
+//            }
+//        );
+//
+//        clientTarget.on( "load", function(clientTarget)
+//                {
+//                    $('#flash-loaded').fadeIn();
+//
+//                    console.log('flash loaded');
+//
+//                    clientTarget.on( "dataRequested", function(clientTarget, args) {
+//                        clientTarget.setText( args.text );
+//                        $(this).css('backgroundColor','#ccc');
+//                        $(this).parent().find('.msg_box').fadeIn();
+//                        _self = $(this);
+//                        setTimeout(function(){_self.parent().find('.msg_box').fadeOut();},1500);
+//                    } );
+//                }
+//        );
+//
+//    });
 

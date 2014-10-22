@@ -12,7 +12,6 @@
 
 
 //= require jquery
-//= require ZeroClipboard.js
 //= require ./angularJs/angular.min.js
 //= require ./angularJs/angular-resource.min.js
 //= require ./angularJs/angular-route.js

@@ -43,19 +43,19 @@
 
 	
 </style>
- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
- <script src="http://asafdav.github.io/ng-csv/javascripts/ngClip.js"></script>
- <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/1.1.7/ZeroClipboard.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.6/ZeroClipboard.min.js"></script>
+     <script src="//rawgit.com/asafdav/ng-clip/master/src/ngClip.js"></script>
  </head>
  <body>
  <script>
 var copyApp = angular.module('clip', ['ngClipboard']);
 copyApp.controller("Main", function($scope){
-	$scope.text = "Copy the text here."   //set the default text
+	$scope.toBeCopied = "Copy the text here."   //set the default text
 	$scope.copied = false;				  //message display control
 	
     $scope.getTextToCopy = function() {
-        return $scope.text;				 //copy the text to clipboard
+        return $scope.toBeCopied;				 //copy the text to clipboard
     };
     $scope.displayMes = function () {
         $scope.copied = true;
@@ -68,7 +68,7 @@ copyApp.controller("Main", function($scope){
 <body ng-app="clip" ng-controller="Main" class="clearfix">
 <div class="copy">
 	<h1> Copy test </h1>
-	<textarea rows="10" cols="50" ng-model="text"></textarea><br/>
+	<textarea rows="10" cols="50" ng-model="toBeCopied"></textarea><br/>
 	<button class="btn" clip-copy="getTextToCopy()" clip-click="displayMes()">Copy</button>
 </div>
 <div class="paste">
