@@ -28,7 +28,7 @@
             <div class="msg_box" ng-show="copied">
               Copied
             </div>
-            <div clip-copy="getTextToCopy()" clip-click="displayMes()" class="buttonFt">
+            <div clip-copy="getTextToCopy()" clip-click="displayMes()" ng-class="{true:'buttonFt', false:'buttonFt lightbg'}[buttonCss]">
               Click to Copy
             </div>
           </div>

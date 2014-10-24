@@ -7,15 +7,26 @@
  */
 
 
-adAssetModule.controller("clipController",function($scope){
+adAssetModule.controller("clipController", function($scope,$timeout){
     $scope.toBeCopied = "";
     $scope.copied = false;				  //message display control
+    $scope.buttonCss = true;
 
     $scope.getTextToCopy = function() {
         return $scope.toBeCopied;				 //copy the text to clipboard
     };
     $scope.displayMes = function () {
         $scope.copied = true;
+        $scope.buttonCss = false;
+        $timeout(function(){
+            $scope.copied = false;
+        }, 1500);
+
+//        setTimeout(function () {
+//            $scope.$apply(function () {
+//                $scope.copied = false;
+//            });
+//        }, 1500);        //working code  with $scope.$apply as reference.
 
     };
 });
