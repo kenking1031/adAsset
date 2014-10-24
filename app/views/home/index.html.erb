@@ -12,7 +12,7 @@
       </tr>
   </thead>
   <tbody>
-      <tr ng-repeat="asset in assets | orderBy:sort.column:sort.descending">
+      <tr ng-repeat="asset in assets | orderBy:sort.column:sort.descending" ng-controller="clipController">
         <td>
           <img class="thumbnail" src='{{asset.thumbnail}}' ng-click="firePopup()">
         </td>
@@ -20,15 +20,15 @@
         <td>{{asset.created_time }}</td>
         <td>
           <div class="urlFt" onClick="body.style.overflow='hidden'">
-            <textarea id="target-to-copy" ng-click="firePopup();">{{asset.play_url}}</textarea>
+            <textarea ng-model="toBeCopied" ng-click="firePopup();" ng-init = "toBeCopied = asset.play_url"></textarea>
           </div>
         </td>
         <td>
           <div class="button_container">
-            <div class="msg_box">
+            <div class="msg_box" ng-show="copied">
               Copied
             </div>
-            <div data-clipboard-target="target-to-copy-text" class="buttonFt">
+            <div clip-copy="getTextToCopy()" clip-click="displayMes()" class="buttonFt">
               Click to Copy
             </div>
           </div>

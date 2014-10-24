@@ -6,8 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 
-//var adAssetModule = angular.module('adAsset', ['ngRoute','ngClipboard']);
-var adAssetModule = angular.module('adAsset', ['ngRoute']);
+var adAssetModule = angular.module('adAsset', ['ngRoute','ngClipboard']);
+//var adAssetModule = angular.module('adAsset', ['ngRoute']);
 
 adAssetModule.config(['$routeProvider', function ($routeProvider) {
 

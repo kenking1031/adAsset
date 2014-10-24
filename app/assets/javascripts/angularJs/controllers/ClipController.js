@@ -8,7 +8,7 @@
 
 
 adAssetModule.controller("clipController",function($scope){
-    $scope.toBeCopied = "Copy the text here."   //set the default text
+    $scope.toBeCopied = "";
     $scope.copied = false;				  //message display control
 
     $scope.getTextToCopy = function() {
@@ -16,6 +16,7 @@ adAssetModule.controller("clipController",function($scope){
     };
     $scope.displayMes = function () {
         $scope.copied = true;
+
     };
 });
 

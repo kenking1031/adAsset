@@ -15,7 +15,6 @@ gem 'spinjs-rails'
 gem "psych"
 
 gem 'jquery-rails'
-#gem 'zeroclipboard-rails', '~> 0.1.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
