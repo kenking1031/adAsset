@@ -1,0 +1,10 @@
+rvm use ruby-2.0.0-p451
+export PATH="./bin:$PATH"
+
+if ! command -v bundle > /dev/null ; then
+  gem install bundler
+fi
+
+if ! command -v node > /dev/null ; then
+  echo "A JavaScript runtime is required to run the specs, please install node.js"
+fi

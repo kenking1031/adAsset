@@ -60,7 +60,7 @@ AdAssets::Application.routes.draw do
   root :to => 'home#index'
 
 
-
+  match '/:anything', :to => 'home#index', :constraints => {:anything => /.*/}
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
