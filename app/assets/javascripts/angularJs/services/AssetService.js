@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-angular.module('adAsset')
+adAssetModule
     .factory('dataFactory', ['$http', function($http) {
 
         var urlBase = '/api/channels/assets';
