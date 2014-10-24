@@ -1,6 +1,12 @@
 <div ng-app="adAsset" ng-controller="assetsController">
 <div id="header">{{message}}</div>
-<div id ="subheader">Click on Title or Time to sort, and click on each thumbnail or URL to play the ad.</div>
+
+
+  <div class="bar">
+    <!-- Create a binding between the searchString model and the text field -->
+    <input type="text" ng-model="searchString" placeholder="Enter your search terms" />
+  </div>
+  <div id ="subheader">Click on Title or Time to sort, and click on each thumbnail or URL to play the ad.</div>
 <table id="keywords" cellspacing="0" width="100%">
   <thead>
       <tr>
@@ -12,7 +18,7 @@
       </tr>
   </thead>
   <tbody>
-      <tr ng-repeat="asset in assets | orderBy:sort.column:sort.descending" ng-controller="clipController">
+      <tr ng-repeat="asset in assets | orderBy:sort.column:sort.descending | searchFor:searchString" ng-controller="clipController">
         <td>
           <img class="thumbnail" src='{{asset.thumbnail}}' ng-click="firePopup()">
         </td>
