@@ -15,7 +15,7 @@ adAssetModule.config(['$routeProvider', function ($routeProvider) {
         controller: 'assetsController',
         templateUrl: '/app/views/temp/index.html'
     })
-        .otherwise({ redirectTo: '/' });
+//        .otherwise({ redirectTo: '/' });
 
 }]);
 

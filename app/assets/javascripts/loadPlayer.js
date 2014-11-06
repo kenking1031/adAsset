@@ -21,7 +21,7 @@ attributes.id = "PlayerPlatformAPI";
 attributes.name = "PlayerPlatformAPI";
 attributes.align = "middle";
 swfobject.embedSWF(
-    "../test-html-pages/PlayerPlatformAPI.swf", "flashContent",
+    "http://docs.prod.xidio.com/Viper/PlayerPlatformAPI.swf", "flashContent",
     "800", "450",
     swfVersionStr, xiSwfUrlStr,
     flashvars, params, attributes);
