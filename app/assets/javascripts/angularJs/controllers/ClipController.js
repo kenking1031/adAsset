@@ -7,7 +7,7 @@
  */
 
 
-adAssetModule.controller("clipController", function($scope,$timeout){
+adAssetModule.controller("clipController",['$scope','$timeout',function($scope,$timeout){
     $scope.toBeCopied = "";
     $scope.copied = false;				  //message display control
     $scope.buttonCss = true;
@@ -29,5 +29,5 @@ adAssetModule.controller("clipController", function($scope,$timeout){
 //        }, 1500);        //working code  with $scope.$apply as reference.
 
     };
-});
+}]);
 

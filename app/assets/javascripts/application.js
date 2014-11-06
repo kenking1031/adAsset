@@ -11,12 +11,11 @@
 // GO AFTER THE REQUIRES BELOW.
 
 
-//= require jquery
-//= require ./angularJs/angular.min.js
+
+
 //= require ./angularJs/angular-resource.min.js
 //= require ./angularJs/angular-route.js
 //= require swfobject.js
-//= require jquery.spin
 //= require_tree .
 
 
