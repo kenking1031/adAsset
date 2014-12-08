@@ -9,7 +9,7 @@ class Api::ChannelsController < ApplicationController
 
     @message = "Watchable Ad Assets"
 
-    channel_videos_response = Finder.find($MidTierToken, nil, nil, nil, "channels", nil, nil, nil, nil, size, nil, "/api/web/admin/search/channels/#{channel_id}/videos?pageNum=#{pageNum}&pageSize=#{size}")
+    channel_videos_response = Finder.find($MidTierToken, nil, nil, nil, "channels", nil, nil, nil, nil, size, nil, "/api/web/channels/#{channel_id}/videos?adminSearch=true")
 
     @channel_videos =channel_videos_response[0]
 
@@ -25,7 +25,7 @@ class Api::ChannelsController < ApplicationController
         title = video['title']
         created_time = video['liveBroadcastTime']
 
-        playbackItem = Finder.find($MidTierToken, nil, nil, nil, "videos", nil, nil, nil, nil, nil, nil, "/api/web/admin/search/videos/#{video['id']}/playbackuri?videoFormat=MP4")[0]
+        playbackItem = Finder.find($MidTierToken, nil, nil, nil, "videos", nil, nil, nil, nil, nil, nil, "/api/web/videos/#{video['id']}/playbackuri?videoFormat=MP4&adminSearch=true")[0]
         if playbackItem.contentURL.blank?
           play_url = "error"
         else
