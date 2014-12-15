@@ -9,7 +9,8 @@ defaults:
   XTIER_URL: "http://ec2-54-237-27-55.compute-1.amazonaws.com:9000/api"
   XTIER_URL: "http://demo3-fabric-lb-1756645713.us-east-1.elb.amazonaws.com/api"   #demo3-original url /loader balancer
 #  XTIER_URL: "http://fabricdemo.xidio.com/api"   #demo3
-  XTIER_URL: "http://ec2-54-198-245-177.compute-1.amazonaws.com:9000/api"    #dev instance
+  XTIER_URL: "http://poc.demo.xidio.com:9000/api"    #cohosted instance
+#  XTIER_URL: "http://ec2-54-198-245-177.compute-1.amazonaws.com:9000/api"    #dev instance
   AMAZON_SERVICES_URL: "http://demo3-event-lb-629145520.us-east-1.elb.amazonaws.com"
 
   # When there is sign in secreat that URI transform the secret must be set separatly. Else the secret section in the url can be used
