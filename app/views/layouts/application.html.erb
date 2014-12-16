@@ -14,10 +14,12 @@
     </head>
 
     <body class="home">
+     <div style="width:100%;background-color: #fff">
         <a href="/">
-          <img id="logo" src="/assets/watchable.svg" onerror="this.src='/assets/watchable.png'" />
+          <img id="logo" style="margin-left:20px" src="http://demo3-image-lb-1840931351.us-east-1.elb.amazonaws.com/api/v2/img/54219330e4b088c97249ae6b+1411486512000?width=222" />
         </a>
-
+       <div style="text-align: center;color:#888;position:absolute;width:100%;top:75px;font-size: 25px" id="header">Ad Assets</div>
+     </div>
         <div id="content-wrapper">
           <div id="content">
             <%= yield %>

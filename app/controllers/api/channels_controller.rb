@@ -7,7 +7,7 @@ class Api::ChannelsController < ApplicationController
 
     channel_id= params[:channelId] || SiteConfig.CHANNEL_ID
 
-    @message = "Watchable Ad Assets"
+    @message = ""
 
     channel_videos_response = Finder.find($MidTierToken, nil, nil, nil, "channels", nil, nil, nil, nil, size, nil, "/api/web/channels/#{channel_id}/videos?adminSearch=true")
 
